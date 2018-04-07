@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: jguyomard/hugo-builder
+      - image: pulimento/hugo-firebase
     steps:
       - checkout
       - run: hugo

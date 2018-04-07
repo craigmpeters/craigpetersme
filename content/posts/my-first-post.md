@@ -1,7 +1,7 @@
 ---
 title: "One Day I will have time to write in the blog"
 date: 2018-04-07T10:58:04+01:00
-draft: true
+draft: false
 ---
 
 I think that day will be today, normally I have a kind of issue around writing a blog, mostly around the fact that writing it is something I have to remember to do, then thinking about words that people would be interested in reading and then being content around where it is posted. 
