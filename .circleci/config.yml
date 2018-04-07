@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: dgageot/hugo
+      - image: jguyomard/hugo-builder
     steps:
       - checkout
       - run: hugo
