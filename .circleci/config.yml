@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: pulimento/hugo-firebase
+      - image: craigmpeters/docker-hugo-firebase
     steps:
       - checkout
       - run: hugo
