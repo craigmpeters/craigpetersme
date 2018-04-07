@@ -1,0 +1,22 @@
+<div class="sidebar">
+	<div class="container text-center sidebar-sticky">
+		<div class="sidebar-about text-center">
+			<h1 class="lead">{{ .Site.Title }}</h1>
+			<a href="{{ .Site.BaseURL }}">
+				{{ with .Site.Params.authorimage }} <img src="{{.}}" alt="Author Image" class="img-circle headshot center"> {{ end }}
+			</a>
+			<p class="lead">
+				The <a href="https://xkcd.com/148/" target="_new">Blag</a> of Craig Peters
+			</p>
+		</div>
+		{{ partial "sidebar_menu.html" . }}
+        <p>
+		{{ partial "sidebar_social.html" . }}
+        </p>
+		<p class="copyright">{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}} {{.Site.Params.author}}.
+        <a href="https://creativecommons.org/licenses/by/4.0">Some Rights Reserved</a>.<br/>Built with <a href="https://gohugo.io/">Hugo</a>.{{end}}
+        </p>
+	</div>
+	<div>
+	</div>
+</div>
