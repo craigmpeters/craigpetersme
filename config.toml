@@ -1,3 +1,40 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://craigpeters.me"
+languageCode = "en-gb"
+theme = "hyde-hyde"
+title = "craigpeters dot me"
+
+[params]
+    author = "Craig Peters"
+    description = "The Blag of Craig Peters"
+    authorimage = "/title-starbucks.gif"
+    dateformat = "Jan 2, 2006"
+    highlightjs = true
+    GraphCommentId = "craigpeters-me"
+    themeColor = "theme-base-08"
+    layoutReverse = true
+
+## Social Accounts
+[params.social]
+    github = "craigmpeters"
+    instagram = "craigmpeters"
+    linkedin = "craigmpeters"
+    twitter = "craigmpeters"
+    email = "craig@craigpeters.me"
+
+
+## Main Menu
+[[menu.main]]
+    name = "Home"
+    weight = 100
+    identifier = "home"
+    url = "/"
+[[menu.main]]
+    name = "Posts"
+    weight = 200
+    identifier = "posts"
+    url = "/posts/"
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 300
+    url = "/about/"
