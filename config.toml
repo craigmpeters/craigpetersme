@@ -1,4 +1,4 @@
-baseURL = "https://craigpeters.me"
+baseURL = "https://craigpeters.me/"
 languageCode = "en-gb"
 theme = "hyde-hyde"
 title = "craigpeters dot me"
