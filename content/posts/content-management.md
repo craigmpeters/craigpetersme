@@ -12,7 +12,7 @@ Some may include marketing systems, but what if you use Adobe Marketing Cloud? T
 
 Some application based CMS get this right and have something bareboned and then allow you to add or purchase modules - but what if these prevent you from upgrading by not being designed correctly? You are almost doomed in a land of not being supported in some way.  
 
-The way I see it content management systems should be responsible for displaying content and not much else, and in the world where we have multiple channels where we want this content to be visible (TV, Asvertisement, Apps) it is more important than ever there is a single place to publish this information as that causes less hassle for content editors.  
+The way I see it content management systems should be responsible for displaying content and not much else, and in the world where we have multiple channels where we want this content to be visible (TV, advertisement, Apps) it is more important than ever there is a single place to publish this information as that causes less hassle for content editors.  
 
 Because of this I am a fan of headless CMS which allow you to simply create content and then interact through it with an API, want only a couple of articles? Want that advertising one? Just have a different query - you can even pass information about the person and add personalisation in some cases.
 
