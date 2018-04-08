@@ -1,6 +1,6 @@
 ---
 title: "On the subject of content management systems"
-date: 2018-04-08T20:37:14Z
+date: 2018-04-08T20:37:04+01:00
 draft: false
 ---
 
