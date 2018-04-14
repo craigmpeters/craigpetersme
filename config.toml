@@ -38,3 +38,8 @@ title = "craigpeters dot me"
     identifier = "about"
     weight = 300
     url = "/about/"
+[[menu.main]]
+    name = "Subscribe to Newsletter"
+    identifier = "subscribe"
+    weight = 400
+    url = "/newsletter/"
