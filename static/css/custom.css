@@ -78,12 +78,11 @@ code {
     margin-right: auto;
     margin-left: auto;
 }
-/* Changing from font-awesome 4 to 5, the class pull-right was removed */
+
 .pull-right {
     float: right;
 }
-
-.lead a, .lead a:visited{
+.lead a, .lead a:visited, .lead a:link{
     text-decoration: none;
     color: rgba(255,255,255,.5)
 }

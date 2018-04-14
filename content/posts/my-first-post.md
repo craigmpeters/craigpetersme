@@ -5,6 +5,7 @@ draft: false
 ---
 
 I think that day will be today, normally I have a kind of issue around writing a blog, mostly around the fact that writing it is something I have to remember to do, then thinking about words that people would be interested in reading and then being content around where it is posted. 
+ <!--more-->
 
 I have previously used Medium against my custom domain name for hosting stuff, but overall that is not flexible, same with things like wordpress or those other CMSs out there which as a Solutions Architect with a general digital slant I should work with anyway, but overall I do not really have the time or patience for a lot of content management systems mostly because they are overwraught with setup, configuration and something which takes a lot of time care consideration and the like.  
 
