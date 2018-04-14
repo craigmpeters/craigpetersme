@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-gb"
 theme = "hyde-hyde"
 title = "craigpeters dot me"
+googleAnalytics = "UA-117534850-1"
 
 [params]
     author = "Craig Peters"
