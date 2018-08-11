@@ -1,7 +1,7 @@
 ---
-label: One Day I will have time to write in the blog
-hide_body: 
-is_partial: 
+label: Blog
+hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
