@@ -13,3 +13,5 @@ fields:
   type: datetime
   hidden: false
   default: ''
+pages:
+- content/posts/uk-wirecutting-guide.md
