@@ -1,0 +1,26 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'vs2017-win2016'  # need a Windows host because the Hugo task uses PowerShell
+
+steps:
+- checkout: self
+  displayName: 'Checkout repository including submodules'
+  submodules: true  # true so Hugo theme submodule is checked out
+
+- task: HugoTask@1
+  displayName: 'Generate Hugo site'
+  inputs:
+    destination: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishPipelineArtifact@0
+  displayName: 'Publish Hugo site as artifact'
+  inputs:
+    artifactName: 'hugo-site'
+    targetPath: '$(Build.ArtifactStagingDirectory)'
