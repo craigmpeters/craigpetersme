@@ -82,3 +82,12 @@ code {
 .pull-right {
     float: right;
 }
+
+.lead a, .lead a:visited, .lead a:link{
+    text-decoration: none;
+    color: rgba(255,255,255,.5)
+}
+
+.lead a:hover {
+    color: rgba(255,255,255,1)
+}

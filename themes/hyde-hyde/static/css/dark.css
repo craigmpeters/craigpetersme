@@ -1,0 +1,26 @@
+@media (prefers-color-scheme: dark) {
+body
+{
+	background-color: #222;
+	color: #ccc
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #ccc;
+}
+
+.sidebar-about h1 {
+	color: #222;
+}
+
+.lead a, .lead a:visited, .lead a:link{
+    text-decoration: none;
+    color: rgba(255,255,255,.5)
+}
+
+.lead a:hover {
+    color: rgba(0,0,0,1)
+}
+.sidebar a {
+	color: #222;
+  }
+}

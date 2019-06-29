@@ -10,7 +10,6 @@ googleAnalytics = "UA-117534850-1"
     authorimage = "/title-starbucks.gif"
     dateformat = "Jan 2, 2006"
     highlightjs = true
-    GraphCommentId = "craigpeters-me"
     themeColor = "theme-base-08"
     layoutReverse = true
 
