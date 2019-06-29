@@ -1,7 +1,6 @@
 ---
 label: Blog
 hide_body: false
-is_partial: false
 fields:
 - name: title
   label: Title
@@ -14,5 +13,5 @@ fields:
   hidden: false
   default: ''
 pages:
-- content/posts/an-ode-to-the-greasy-spoon.md
 - content/posts/uk-wirecutting-guide.md
+- content/posts/an-ode-to-the-greasy-spoon.md
