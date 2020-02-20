@@ -13,7 +13,8 @@ fields:
   hidden: false
   default: ''
 pages:
-- content/posts/website-dark-modes.md
-- content/posts/test.md
 - content/posts/an-ode-to-the-greasy-spoon.md
+- content/posts/test.md
+- content/posts/title.md
 - content/posts/uk-wirecutting-guide.md
+- content/posts/website-dark-modes.md
