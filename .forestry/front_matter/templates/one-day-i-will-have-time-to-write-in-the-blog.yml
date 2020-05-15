@@ -14,6 +14,7 @@ fields:
   default: ''
 pages:
 - content/posts/an-ode-to-the-greasy-spoon.md
+- content/posts/not-quite-final-fantasy-vii-reboot.md
 - content/posts/test.md
 - content/posts/title.md
 - content/posts/uk-wirecutting-guide.md
