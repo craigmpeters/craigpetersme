@@ -34,6 +34,11 @@ googleAnalytics = "UA-117534850-1"
     identifier = "posts"
     url = "/posts/"
 [[menu.main]]
+    name = "Images"
+    weight = "250"
+    identifier ="images"
+    url="/images/"
+[[menu.main]]
     name = "About"
     identifier = "about"
     weight = 300
