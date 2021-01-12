@@ -7,3 +7,5 @@ fields:
   config: {}
   label: Pictures
   description: Pictures to upload
+pages:
+- content/posts/Trixie.md
