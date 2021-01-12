@@ -26,6 +26,9 @@
 	{{ with .Site.Params.social.xing }}
 	&nbsp;<a href="https://www.xing.com/profile/{{.}}"><i class="fab fa-xing fa-lg" aria-hidden="true"></i></a>
 	{{ end }}
+	{{ with .Site.Params.social.discord }}
+	&nbsp;<a href="https://discordapp.com/users/{{.}}"><i class="fab fa-discord fa-lg" aria-hidden="true"></i></a>
+	{{ end }}
 	{{ with .Site.Params.social.email }}
 	&nbsp;<a href="mailto:{{.}}"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
 	{{ end }}
