@@ -16,9 +16,8 @@ googleAnalytics = "UA-117534850-1"
 ## Social Accounts
 [params.social]
     github = "craigmpeters"
-    instagram = "craigmpeters"
     linkedin = "craigmpeters"
-    twitter = "craigmpeters"
+    discord = "283708674357198853"
     email = "craig@craigpeters.me"
 
 
