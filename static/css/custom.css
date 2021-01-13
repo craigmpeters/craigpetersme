@@ -82,3 +82,8 @@ code {
 .pull-right {
     float: right;
 }
+
+
+.galleryimage {
+    display: inline-flex;
+}
