@@ -1,4 +1,5 @@
 baseURL = "/"
+assetDir = "/static/"
 languageCode = "en-gb"
 theme = "hyde-hyde"
 title = "craigpeters dot me"

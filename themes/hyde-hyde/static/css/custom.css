@@ -91,3 +91,7 @@ code {
 .lead a:hover {
     color: rgba(255,255,255,1)
 }
+
+.galleryimage {
+    display: inline;
+}
