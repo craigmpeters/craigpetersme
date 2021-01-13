@@ -5,7 +5,7 @@
             {{ if .Params.pictures }}
                 {{ $path := .Params.pictures }}
                 {{ $image := resources.Get $path }}
-                {{ $thumbnail := $image.Fill "200x200" }}
+                {{ $thumbnail := $image.Fill "180x180" }}
             
                 <a href="{{ .Permalink }}">
                     <img class="galleryimage" src="{{ $thumbnail.Permalink }}">
