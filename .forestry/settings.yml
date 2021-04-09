@@ -9,11 +9,15 @@ sections:
   label: Images
   create: all
   match: "**/*"
+  templates:
+  - image
 - type: directory
   path: content
   label: Pages
   create: all
   match: "*"
+  templates:
+  - one-day-i-will-have-time-to-write-in-the-blog
 - type: directory
   path: content/posts
   label: Posts
