@@ -1,0 +1,13 @@
+---
+label: Image
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: pictures
+  label: pictures
