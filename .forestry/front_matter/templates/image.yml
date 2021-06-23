@@ -1,11 +1,16 @@
 ---
 label: Image
-hide_body: true
+hide_body: false
+display_field: title
 fields:
-- name: pictures
-  type: image_gallery
-  config: {}
-  label: Pictures
-  description: Pictures to upload
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: pictures
+  label: pictures
 pages:
-- content/posts/Trixie.md
+- content/images/pancake-day.md
