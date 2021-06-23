@@ -12,3 +12,5 @@ fields:
 - type: file
   name: pictures
   label: pictures
+pages:
+- content/images/pancake-day.md
