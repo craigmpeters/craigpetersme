@@ -5,7 +5,18 @@
             {{ if .Params.pictures }}
                 {{ $path := .Params.pictures }}
                 {{ $image := resources.Get $path }}
-                {{ $thumbnail := $image.Fill "180x180" }}
+                {{ $thumbnail := $image.Fill "180x180 smart" }}
+                {{ with $image }}
+                    {{ with .Exif }}
+                        {{ $orientation := .Tags.Orientation }}
+                        {{ if eq $orientation 6 }}
+                            {{ $thumbnail = $thumbnail.Resize "180x r270"}}
+                            {{ $thumbnail = $thumbnail.Fit "180x180"}}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                
+                
             
                 <a href="{{ .Permalink }}">
                     <img class="galleryimage" src="{{ $thumbnail.Permalink }}">

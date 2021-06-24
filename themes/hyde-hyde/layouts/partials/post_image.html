@@ -1,6 +1,13 @@
 <div class="post">
   <h1>{{ .Title }}</h1>
+
+
+
   {{ if ne .Params.showpagemeta false }}
+  
+
+
+  
   <div class="col-sm-12 col-md-12">
     <span class="text-left post-date meta">
       <!-- published date -->      
@@ -9,7 +16,26 @@
       {{ end }}
     </span>  
   </div>    
-  <img src="{{.Params.pictures }}" />
+  {{ if .Params.pictures }}
+  {{ $path := .Params.pictures }}
+  {{ $image := resources.Get $path }}
+  {{ $thumbnail := $image.Fill "900x900 smart" }}
+  {{ with $image }}
+      {{ with .Exif }}
+          {{ $orientation := .Tags.Orientation }}
+          {{ if eq $orientation 6 }}
+              {{ $thumbnail = $thumbnail.Resize "900x r270"}}
+
+          {{ end }}
+      {{ end }}
+  {{ end }}
+  
+  
+
+  <a href="{{ .Permalink }}">
+      <img class="galleryimage" src="{{ $thumbnail.Permalink }}">
+  </a>
+{{ end }}
 
 
   {{ end }}
