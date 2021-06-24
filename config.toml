@@ -13,6 +13,7 @@ googleAnalytics = "UA-117534850-1"
     highlightjs = true
     themeColor = "theme-base-08"
     layoutReverse = true
+    mainsections = ["posts"]
 
 ## Social Accounts
 [params.social]
