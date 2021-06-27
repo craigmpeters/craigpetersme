@@ -13,4 +13,7 @@ fields:
   name: pictures
   label: pictures
 pages:
+- content/images/glenfinnan-viaduct.md
+- content/images/looking-towards-loch-tulla.md
+- content/images/oban.md
 - content/images/pancake-day.md
