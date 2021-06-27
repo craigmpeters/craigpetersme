@@ -1,6 +1,5 @@
 +++
 date = 2020-09-22T23:00:00Z
-draft = true
 pictures = "/uploads/957c723e2f32bcb6f91209cd1af39a28.jpg"
 title = "Looking towards Loch Tulla"
 
