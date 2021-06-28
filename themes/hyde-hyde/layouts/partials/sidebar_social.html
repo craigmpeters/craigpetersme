@@ -1,21 +1,21 @@
 <section class="row text-center">
 	{{ with .Site.Params.social.twitter }}
-	<a href="https://twitter.com/{{.}}"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	<a href="https://twitter.com/{{.}}" target="_blank"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
 	{{ end }}
 	{{ with .Site.Params.social.facebook }}
-	&nbsp;<a href="https://facebook.com/{{.}}"><i class="fab fa-facebook-f"></i></a>
+	&nbsp;<a href="https://facebook.com/{{.}}" target="_blank"><i class="fab fa-facebook-f"></i></a>
 	{{ end }}
 	{{ with .Site.Params.social.github }}
-	&nbsp;<a href="https://github.com/{{.}}"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	&nbsp;<a href="https://github.com/{{.}}" target="_blank"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
 	{{ end }}
 	{{ with .Site.Params.social.bitbucket }}
-	&nbsp;<a href="https://bitbucket.org/{{.}}"><i class="fab fa-bitbucket fa-lg" aria-hidden="true"></i></a>
+	&nbsp;<a href="https://bitbucket.org/{{.}}" target="_blank"><i class="fab fa-bitbucket fa-lg" aria-hidden="true"></i></a>
 	{{ end }}
 	{{ with .Site.Params.social.instagram }}
-	&nbsp;<a href="https://instagram.com/{{.}}"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a>
+	&nbsp;<a href="https://instagram.com/{{.}}" target="_blank"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a>
 	{{ end }}
 	{{ with .Site.Params.social.linkedin }}
-	&nbsp;<a href="https://linkedin.com/in/{{.}}"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	&nbsp;<a href="https://linkedin.com/in/{{.}}" target="_blank"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
 	{{ end }}
 	{{ with .Site.Params.social.stackoverflow }}
 	&nbsp;<a href="https://stackoverflow.com/users/{{.}}"><i class="fab fa-stack-overflow fa-lg" aria-hidden="true"></i></a>
@@ -27,9 +27,12 @@
 	&nbsp;<a href="https://www.xing.com/profile/{{.}}"><i class="fab fa-xing fa-lg" aria-hidden="true"></i></a>
 	{{ end }}
 	{{ with .Site.Params.social.discord }}
-	&nbsp;<a href="https://discordapp.com/users/{{.}}"><i class="fab fa-discord fa-lg" aria-hidden="true"></i></a>
+	&nbsp;<a href="https://discordapp.com/users/{{.}}" target="_blank"><i class="fab fa-discord fa-lg" aria-hidden="true"></i></a>
 	{{ end }}
 	{{ with .Site.Params.social.email }}
 	&nbsp;<a href="mailto:{{.}}"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
+	{{ end }}
+	{{ with .Site.Params.social.flickr }}
+	&nbsp;<a href="https://www.flickr.com/photos/{{.}}/" target="_blank"><i class="fab fa-flickr fa-lg" aria-hidden="true"></i></a>
 	{{ end }}
 </section>
