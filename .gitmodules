@@ -1,0 +1,3 @@
+[submodule "themes/craigpetersme-theme"]
+	path = themes/craigpetersme-theme
+	url = https://github.com/craigmpeters/craigpetersme-theme.git
