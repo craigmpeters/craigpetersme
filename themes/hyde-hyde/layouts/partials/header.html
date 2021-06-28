@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     {{ with .Site.Params.meta.description -}}<meta name="description" content="{{ . }}">{{- end }}
     {{ with .Site.Params.meta.keywords -}}<meta name="keywords" content="{{.}}">{{- end }}
-    {{ .Hugo.Generator }}
+    {{ hugo.Generator }}
     {{ if .IsHome -}}
     <title>{{ .Site.Title }}</title>
     {{- else }}
