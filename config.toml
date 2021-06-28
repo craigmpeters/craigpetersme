@@ -1,7 +1,7 @@
 baseURL = "/"
 assetDir = "/static/"
 languageCode = "en-gb"
-theme = "hyde-hyde"
+theme = "craigpetersme-theme"
 title = "craigpeters dot me"
 googleAnalytics = "UA-117534850-1"
 
