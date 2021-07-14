@@ -4,6 +4,7 @@ languageCode = "en-gb"
 theme = "craigpetersme-theme"
 title = "craigpeters dot me"
 googleAnalytics = "UA-117534850-1"
+description = "The Blag of Craig Peters"
 
 [params]
     author = "Craig Peters"
@@ -14,6 +15,12 @@ googleAnalytics = "UA-117534850-1"
     themeColor = "theme-base-08"
     layoutReverse = true
     mainsections = ["posts"]
+
+[privacy]
+    [privacy.googleAnalytics]
+        anonymizeIP = true
+        respectDoNotTrack = true
+        useSessionStorage = true
 
 ## Social Accounts
 [params.social]
