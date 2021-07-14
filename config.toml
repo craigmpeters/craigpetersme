@@ -8,7 +8,7 @@ description = "The Blag of Craig Peters"
 
 [params]
     author = "Craig Peters"
-    description = "The Blag of Craig Peters"
+    description = "The [Blag](https://blah) of Craig Peters"
     authorimage = "/title-starbucks.gif"
     dateformat = "Jan 2, 2006"
     highlightjs = true

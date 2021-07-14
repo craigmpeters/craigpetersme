@@ -1,0 +1,9 @@
+<nav>
+    <p class="logo">
+        {{ with .Site.Params.authorimage }} <img src="{{.}}" alt="Author Image" class="img-circle headshot center"> {{ end }}
+    </p>
+    <p class="lead">
+        The <a href="https://xkcd.com/148/" target="_blank">Blag</a> of Craig Peters
+    </p>
+    {{ partial "menu.html" . }}
+</nav>
