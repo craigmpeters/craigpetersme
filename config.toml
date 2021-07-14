@@ -15,6 +15,12 @@ googleAnalytics = "UA-117534850-1"
     layoutReverse = true
     mainsections = ["posts"]
 
+[privacy]
+    [privacy.googleAnalytics]
+        anonymizeIP = true
+        respectDoNotTrack = true
+        useSessionStorage = true
+
 ## Social Accounts
 [params.social]
     github = "craigmpeters"
