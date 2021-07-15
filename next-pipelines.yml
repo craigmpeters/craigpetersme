@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+- theme
 
 pool:
   vmImage: 'vs2017-win2016'  # need a Windows host because the Hugo task uses PowerShell
