@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+- theme
 
 pool:
   vmImage: 'vs2017-win2016'  # need a Windows host because the Hugo task uses PowerShell
@@ -20,9 +20,12 @@ steps:
     source: 
     destination: '$(Build.ArtifactStagingDirectory)'
     hugoVersion: '0.84.0'
+    extendedVersion: true
 
 - task: PublishPipelineArtifact@0
   displayName: 'Publish Hugo site as artifact'
   inputs:
     artifactName: 'hugo-site'
     targetPath: '$(Build.ArtifactStagingDirectory)'
+    
+

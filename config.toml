@@ -16,6 +16,10 @@ description = "The Blag of Craig Peters"
     layoutReverse = true
     mainsections = ["posts"]
 
+[minify]
+    minifyOutput = true
+
+
 [privacy]
     [privacy.googleAnalytics]
         anonymizeIP = true
