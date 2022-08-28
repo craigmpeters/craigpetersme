@@ -14,7 +14,7 @@ steps:
     displayName: "Checkout repository including submodules"
     submodules: false # true so Hugo theme submodule is checked out
 
-  - task: giuliovdev.hugo-extension.hugo-build-task-v2.HugoTask@1
+  - task: 528c73d9-c552-4e2d-a26f-fb5c91c32554@2
     inputs:
       source: 
       destination: '$(Build.ArtifactStagingDirectory)"'
