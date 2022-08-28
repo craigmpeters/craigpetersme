@@ -14,11 +14,11 @@ steps:
     displayName: "Checkout repository including submodules"
     submodules: false # true so Hugo theme submodule is checked out
 
-- task: HugoTask@1
-  inputs:
-    source: 
-    destination: '$(Build.ArtifactStagingDirectory)"'
-    hugoVersion: '0.101.0'
+  - task: HugoTask@1
+    inputs:
+      source: 
+      destination: '$(Build.ArtifactStagingDirectory)"'
+      hugoVersion: '0.101.0'
 
   - task: PublishPipelineArtifact@0
     displayName: "Publish Hugo site as artifact"
