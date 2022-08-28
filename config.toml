@@ -1,12 +1,13 @@
 baseURL = "/"
-assetDir = "/static/"
+assetDir = "static"
 languageCode = "en-gb"
 theme = "hyde-hyde"
 title = "craigpeters dot me"
-googleAnalytics = "UA-117534850-1"
+googleAnalytics = "G-B23EBBGY9K"
 
 [params]
     author = "Craig Peters"
+    
     description = "The Blag of Craig Peters"
     authorimage = "/title-starbucks.gif"
     dateformat = "Jan 2, 2006"
