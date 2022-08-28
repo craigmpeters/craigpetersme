@@ -4,25 +4,25 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+  - master
 
 pool:
-  vmImage: 'vs2017-win2016'  # need a Windows host because the Hugo task uses PowerShell
+  vmImage: "vs2017-win2016" # need a Windows host because the Hugo task uses PowerShell
 
 steps:
-- checkout: self
-  displayName: 'Checkout repository including submodules'
-  submodules: false  # true so Hugo theme submodule is checked out
+  - checkout: self
+    displayName: "Checkout repository including submodules"
+    submodules: false # true so Hugo theme submodule is checked out
 
-- task: HugoTask@1
-  displayName: 'Generate Hugo site'
-  inputs:
-    source: 
-    destination: '$(Build.ArtifactStagingDirectory)'
-    hugoVersion: '0.84.0'
+  - task: HugoTask@1
+    displayName: "Generate Hugo site"
+    inputs:
+      source:
+      destination: "$(Build.ArtifactStagingDirectory)"
+      hugoVersion: "0.101.0"
 
-- task: PublishPipelineArtifact@0
-  displayName: 'Publish Hugo site as artifact'
-  inputs:
-    artifactName: 'hugo-site'
-    targetPath: '$(Build.ArtifactStagingDirectory)'
+  - task: PublishPipelineArtifact@0
+    displayName: "Publish Hugo site as artifact"
+    inputs:
+      artifactName: "hugo-site"
+      targetPath: "$(Build.ArtifactStagingDirectory)"
