@@ -1,8 +1,8 @@
-+++
+---
 date = 2020-06-18T23:00:00Z
 title = "Hey let’s talk about in app purchases"
 
-+++
+---
   
 I think it is time we discussed the ecosystem around apps which are on the Apple App Store and around how it works with managed services and how there’s an almost two tiered system with who is allowed to keep a margin and who has to pay Apple 30% for card processing.  
 

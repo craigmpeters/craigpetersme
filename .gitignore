@@ -1,4 +1,16 @@
+# Hugo
 .DS_Store
 themes/.DS_Store
 public
 resources/_gen
+
+# Nuxt
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.data
+.env
+dist
