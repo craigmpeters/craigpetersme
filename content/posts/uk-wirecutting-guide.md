@@ -1,6 +1,6 @@
 ---
-date = "2018-08-11T18:58:12+00:00"
-title = "Uk Wirecutting Guide"
+date : "2018-08-11T18:58:12+00:00"
+title : "Uk Wirecutting Guide"
 
 ---
 The UK has a lot of different ways in which you can watch TV without watching Live TV, but I will add some parts around that in here towards the end because of an unfortunate genre which I am a bit interested in myself.  

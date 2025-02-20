@@ -1,6 +1,6 @@
 ---
-date = "2019-06-28T23:00:00+00:00"
-title = "Website Dark Modes"
+date : "2019-06-28T23:00:00+00:00"
+title : "Website Dark Modes"
 
 ---
 With MacOS Mojave it introduced an operating system wide dark mode, which is great as I prefer it and now with it coming to iOS 13 I will look to use it there as well, but there is a problem, whenever I look at a website which is plain white after I have used a dark website for a while it is rather jarring.  

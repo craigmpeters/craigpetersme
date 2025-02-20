@@ -1,6 +1,6 @@
 ---
-date = 2020-06-19T23:00:00Z
-title = "Why doesn’t Safari outside of MacOS allow notifications"
+date : 2020-06-19T23:00:00Z
+title : "Why doesn’t Safari outside of MacOS allow notifications"
 
 ---
 The whole Apple antitrust talk has got me thinking about something else and that is about Safari Notifications.    

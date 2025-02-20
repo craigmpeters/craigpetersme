@@ -1,6 +1,6 @@
 ---
-date = 2020-05-14T23:00:00Z
-title = "Not Quite Final Fantasy VII Reboot"
+date : 2020-05-14T23:00:00Z
+title : "Not Quite Final Fantasy VII Reboot"
 
 ---
 I think it was my 14th birthday, with some birthday money in the wallet I went with my dad to the local computer games store and had the aim of buying a Playstation.  I had looked at the deals and found one that included 2 controllers a memory card and any two games.  Those two games I selected were Gran Turismo and Final Fantasy VII.  

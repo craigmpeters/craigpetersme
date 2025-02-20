@@ -1,7 +1,7 @@
 ---
-date = "2018-08-19T16:41:49+00:00"
-draft = true
-title = "An ode to the greasy spoon"
+date : "2018-08-19T16:41:49+00:00"
+draft : true
+title : "An ode to the greasy spoon"
 
 ---
 Well, not an ode, that would require a certain amount of poetic razzmatazz that I am not best placed to do myself.  

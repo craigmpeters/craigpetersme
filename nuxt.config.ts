@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  css: ['~/assets/css/main.css'],
   content: {
     navigation: {
       fields: ['date', 'pictures']
@@ -9,10 +10,15 @@ export default defineNuxtConfig({
   postcss: {
     plugins: {
       tailwindcss: {},
-      autoprefixer: {},
+      autoprefixer: {}
     },
   },
-  modules: ['@nuxt/content', '@nuxt/image'],
+  modules: ['@nuxt/content', '@nuxt/image','@vesp/nuxt-fontawesome'],
+  fontawesome: {
+    icons: {
+      brands: ['letterboxd'],
+    }
+  },
 
   routeRules: {
     '/': { prerender: true }

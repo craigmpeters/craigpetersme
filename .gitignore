@@ -1,7 +1,6 @@
 # Hugo
 .DS_Store
 themes/.DS_Store
-public
 resources/_gen
 
 # Nuxt
