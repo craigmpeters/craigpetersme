@@ -1,44 +1,56 @@
 <script setup>
-    // Get Image List
-    const query = { path: '/images', limit: 6, sort: [{ date: -1 }] }
+  import {faLetterboxd, faBluesky, faGithub, faDiscord, faFlickr, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+  import { faAt } from '@fortawesome/free-solid-svg-icons'
 
-  // Content Queries
-  // const postQuery = queryContent('posts')
+  const route = useRoute()
 
-  // Font Awesome
-  import {faLetterboxd, faBluesky, faGithub} from '@fortawesome/free-brands-svg-icons'
+  const { data } = await useAsyncData('images', () => {
+    return queryCollection('images')
+      .order('date' , 'DESC')
+      .limit(6)
+      .all()
+  })
 
 </script>
 
 <template>
-  <div>
-    <nav>
-    <NuxtLink to="/">
-      <h1 class="text-7xl font-black text-center">Craigs Blag</h1>
-    </NuxtLink>
-    </nav>
-    <div>
+  <div id="container" class="flex dark:bg-gray-800 dark:text-white">
+    <div id="main" class="flex-1 mr-64 p-10 min-h-screen">
       <NuxtPage />
     </div>
-    <div id="sidebar">
+    <nav class="w-64 fixed right-0 top-0 h-screen bg-slate-500 dark:bg-orange-900 px-5 py-10 items-center">
+      <div id="title">
+        <NuxtLink to="/">
+          <h1 class="text-xxl font-black text-center">craigpeters dot me</h1>
+          <img src="/public/title-starbucks.gif" alt="" class="m-auto py-2">
+        </NuxtLink>
+      </div>
       <div id="images">
-            <h1 class="decoration-sky-500 text-xl">Images</h1>
-            <ContentList :query="query" v-slot="{ list }">
-            <ul class="grid grid-cols-2 md:grid-cols-6 gap-3 p-4 place-items-center">
-                <li v-for="link of list" :key="link._path">
-                    <NuxtLink :to="link._path"><NuxtImg fit="cover" :src="link.pictures" width="300px" height="300px" class="rounded object-contain h-48 w-96"  />
+            <ul class="grid grid-cols-2 md:grid-cols-2 gap-4 p-4 place-items-center">
+                <li v-for="image of data" :key="image.path">
+                    <NuxtLink :to="image.path"><NuxtImg fit="cover" :src="image.pictures" width="300px" height="300px" class="rounded object-contain w-96"  />
                     </NuxtLink>
                 </li>
             </ul>
-            </ContentList>
         </div>
-        <ul id="socials">
-          <li><a href="https://letterboxd.com/craigmpeters/"><font-awesome :icon="faLetterboxd" />craigmpeters</a></li>
-          <li><a href="https://bsky.app/profile/craigpeters.me"><font-awesome :icon="faBluesky" />@craigpeters.me</a></li>
-          <li><a href="https://github.com/craigmpeters"></a><font-awesome :icon="faGithub" /></li>
+        <ul id="socials" class="text-xl p-5 shrink">
+          <li><a href="https://letterboxd.com/craigmpeters/"><font-awesome :icon="faLetterboxd" /></a></li>
+          <li><a href="https://bsky.app/profile/craigpeters.me"><font-awesome :icon="faBluesky" /></a></li>
+          <li><a href="https://github.com/craigmpeters"><font-awesome :icon="faGithub" /></a></li>
+          <li><a href="https://discordapp.com/users/283708674357198853"><font-awesome :icon="faDiscord" /></a></li>
+          <li><a href="mailto:craig@craigpeters.me"><font-awesome :icon="faAt" /></a></li>
+          <li><a href="https://www.flickr.com/photos/craigmpeters/"><font-awesome :icon="faFlickr" /></a></li>
+          <li><a href="https://linkedin.com/in/craigmpeters"><font-awesome :icon="faLinkedin" /></a></li>
         </ul>
-    </div>
+      </nav>
    
   </div>
 
 </template>
+
+<style>
+#socials li {
+  display: inline-flex;
+  padding: 0 0.2em;
+}
+</style>

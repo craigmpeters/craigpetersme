@@ -5,6 +5,8 @@ title : "Not Quite Final Fantasy VII Reboot"
 ---
 I think it was my 14th birthday, with some birthday money in the wallet I went with my dad to the local computer games store and had the aim of buying a Playstation.  I had looked at the deals and found one that included 2 controllers a memory card and any two games.  Those two games I selected were Gran Turismo and Final Fantasy VII.  
 
+<!-- more -->
+
 I was initially more drawn to Gran Turismo with the ability to start off with a smaller car and modify it to include various performance items, which I have no idea even now how they improve performance for the car but it made the numbers bigger.  I played it a fair amount and it was a good game to play with multiple people and showed the grahpics capability the Playstation had over my Mega Drive significantly. 
 
 Final Fantasy VII I played a lot of, with a few friends of me commenting on the story, I hadn't played many games which had an investment in the story other than the classic LucasArts adventure games like Day of the Tentacle and Sam and Max hit the road with most games concentrating on gameplay.  

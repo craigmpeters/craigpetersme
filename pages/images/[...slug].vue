@@ -1,17 +1,17 @@
 <template>
     <div>
-        <ContentDoc>
-            <template v-slot="{ doc }">
-                <h1>{{  doc.title }}</h1>
-                <NuxtImg fit="cover" :src="doc.pictures" width="300px" height="300px" class="rounded object-contain h-48 w-96"  />
-                <ContentRenderer :value="doc" />
-            </template>
-        </ContentDoc>
+       <NuxtImg :src="image.pictures"  :alt="image.description" class="w-2/3"/>
     </div>
 </template>
 
 <script setup>
+const route = useRoute()
 
+const { data: image } = await useAsyncData(route.path, () => {
+    return queryCollection('images')
+        .path(route.path)
+        .first()
+    })
 </script>
 
 <style lang="scss" scoped>
