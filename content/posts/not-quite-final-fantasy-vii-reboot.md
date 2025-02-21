@@ -1,9 +1,11 @@
-+++
-date = 2020-05-14T23:00:00Z
-title = "Not Quite Final Fantasy VII Reboot"
+---
+date : 2020-05-14T23:00:00Z
+title : "Not Quite Final Fantasy VII Reboot"
 
-+++
+---
 I think it was my 14th birthday, with some birthday money in the wallet I went with my dad to the local computer games store and had the aim of buying a Playstation.  I had looked at the deals and found one that included 2 controllers a memory card and any two games.  Those two games I selected were Gran Turismo and Final Fantasy VII.  
+
+<!-- more -->
 
 I was initially more drawn to Gran Turismo with the ability to start off with a smaller car and modify it to include various performance items, which I have no idea even now how they improve performance for the car but it made the numbers bigger.  I played it a fair amount and it was a good game to play with multiple people and showed the grahpics capability the Playstation had over my Mega Drive significantly. 
 
