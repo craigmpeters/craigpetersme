@@ -14,11 +14,11 @@
 </script>
 
 <template>
-  <div id="container" class="flex dark:bg-gray-800 dark:text-white">
+  <div id="container" class="flex dark:bg-gray-800 dark:text-white px-40">
     <div id="main" class="flex-1 mr-64 p-10 min-h-screen">
       <NuxtPage />
     </div>
-    <nav class="w-64 fixed right-0 top-0 h-screen bg-slate-500 dark:bg-orange-900 px-5 py-10 items-center">
+    <nav class="w-3/12 fixed right-0 top-0 h-screen bg-slate-500 dark:bg-orange-900 py-10 px-15 items-center">
       <div id="title">
         <NuxtLink to="/">
           <h1 class="text-xxl font-black text-center">craigpeters dot me</h1>
@@ -33,7 +33,7 @@
                 </li>
             </ul>
         </div>
-        <ul id="socials" class="text-xl p-5 shrink">
+        <ul id="socials" class="text-2xl p-5 text-center">
           <li><a href="https://letterboxd.com/craigmpeters/"><font-awesome :icon="faLetterboxd" /></a></li>
           <li><a href="https://bsky.app/profile/craigpeters.me"><font-awesome :icon="faBluesky" /></a></li>
           <li><a href="https://github.com/craigmpeters"><font-awesome :icon="faGithub" /></a></li>
