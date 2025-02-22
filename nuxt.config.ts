@@ -2,11 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  content: {
-    navigation: {
-      fields: ['date', 'pictures']
-    }
-  },
   postcss: {
     plugins: {
       tailwindcss: {},
