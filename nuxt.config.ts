@@ -9,15 +9,11 @@ export default defineNuxtConfig({
     },
   },
   modules: ['@nuxt/content', '@nuxt/image','@vesp/nuxt-fontawesome'],
-  fontawesome: {
-    icons: {
-      brands: ['letterboxd'],
-    }
-  },
-
   routeRules: {
     '/': { prerender: true }
   },
-
+  image: {
+    provider: "ipx"
+  },
   compatibilityDate: '2024-10-15'
 })
