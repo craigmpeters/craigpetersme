@@ -14,6 +14,5 @@ export default defineNuxtConfig({
   },
   image: {
     provider: "ipx"
-  },
-  compatibilityDate: '2024-10-15'
+  }
 })
