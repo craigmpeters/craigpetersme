@@ -1,10 +1,12 @@
-+++
-date = 2020-06-18T23:00:00Z
-title = "Hey let’s talk about in app purchases"
+---
+date : 2020-06-18T23:00:00Z
+title : "Hey let’s talk about in app purchases"
 
-+++
+---
   
 I think it is time we discussed the ecosystem around apps which are on the Apple App Store and around how it works with managed services and how there’s an almost two tiered system with who is allowed to keep a margin and who has to pay Apple 30% for card processing.  
+
+<!--more-->
 
 Overall it is the 30% for card processing, if I developed an app and deployed it for free I would pay the Apple Developer Program fee but I would not pay Apple for anything else, I could have push notifications, wallet services, pretty much everything in my app and distribute it for free.    
 The problem is where I want to have it as paid then I would need to pay around a 28% privilege for that based on most card payment provider fees, and overall that is a large amount of money to give up.    
