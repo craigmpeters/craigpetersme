@@ -34,13 +34,13 @@
             </ul>
         </div>
         <ul id="socials" class="text-2xl p-5 text-center">
-          <li><a href="https://letterboxd.com/craigmpeters/"><font-awesome :icon="faLetterboxd" /></a></li>
-          <li><a href="https://bsky.app/profile/craigpeters.me"><font-awesome :icon="faBluesky" /></a></li>
-          <li><a href="https://github.com/craigmpeters"><font-awesome :icon="faGithub" /></a></li>
-          <li><a href="https://discordapp.com/users/283708674357198853"><font-awesome :icon="faDiscord" /></a></li>
-          <li><a href="mailto:craig@craigpeters.me"><font-awesome :icon="faAt" /></a></li>
-          <li><a href="https://www.flickr.com/photos/craigmpeters/"><font-awesome :icon="faFlickr" /></a></li>
-          <li><a href="https://linkedin.com/in/craigmpeters"><font-awesome :icon="faLinkedin" /></a></li>
+          <li><a href="https://letterboxd.com/craigmpeters/" target="_new"><font-awesome :icon="faLetterboxd" title="Letterboxd - craigmpeters" /></a></li>
+          <li><a href="https://bsky.app/profile/craigpeters.me" target="_new"><font-awesome :icon="faBluesky" title="Blue Sky - craigpeters.me"/></a></li>
+          <li><a href="https://github.com/craigmpeters" target="_new"><font-awesome :icon="faGithub" title="Github - craigmpeters"/></a></li>
+          <li><a href="https://discordapp.com/users/283708674357198853" target="_new"><font-awesome :icon="faDiscord" title="Discord"/></a></li>
+          <li><a href="mailto:craig@craigpeters.me" target="_new"><font-awesome :icon="faAt" title="E-Mail: craig@craigpeters.me" /></a></li>
+          <li><a href="https://www.flickr.com/photos/craigmpeters/" target="_new"><font-awesome :icon="faFlickr" title="Flickr - craigmpeters" /></a></li>
+          <li><a href="https://linkedin.com/in/craigmpeters" target="_new"><font-awesome :icon="faLinkedin" title="LinkedIn - craigmpeters" /></a></li>
         </ul>
       </nav>
    
