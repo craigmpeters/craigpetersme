@@ -2,17 +2,23 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {}
     },
   },
+
   modules: ['@nuxt/content', '@nuxt/image','@vesp/nuxt-fontawesome'],
+
   routeRules: {
     '/': { prerender: true }
   },
+
   image: {
     provider: "ipx"
-  }
+  },
+
+  compatibilityDate: '2025-02-23'
 })
