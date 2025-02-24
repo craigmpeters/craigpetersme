@@ -14,21 +14,18 @@
 </script>
 
 <template>
-  <div id="container" class="flex dark:bg-gray-800 dark:text-white px-40">
-    <div id="main" class="flex-1 mr-64 p-10 min-h-screen">
-      <NuxtPage />
-    </div>
-    <nav class="w-3/12 fixed right-0 top-0 h-screen bg-slate-500 dark:bg-orange-900 py-10 px-15 items-center">
+  <div id="container" class="flex flex-wrap dark:bg-gray-800 dark:text-white md:px-40">
+    <nav class="flex-row md:flex-1 w-full md:w-3/12 md:fixed md:right-0 top-0 md:h-screen bg-slate-500 dark:bg-orange-900 py-10 px-15 items-center">
       <div id="title">
         <NuxtLink to="/">
           <h1 class="text-xxl font-black text-center">craigpeters dot me</h1>
           <img src="/public/title-starbucks.gif" alt="" class="m-auto py-2">
         </NuxtLink>
       </div>
-      <div id="images">
-            <ul class="grid grid-cols-2 md:grid-cols-2 gap-4 p-4 place-items-center">
-                <li v-for="image of data" :key="image.path">
-                    <NuxtLink :to="image.path"><NuxtImg fit="cover" :src="image.pictures" width="300px" height="300px" class="rounded object-contain w-96"  />
+      <div id="images" class="overflow-auto md:block">
+            <ul class="flex w-full snap-x gap-12 overflow-x-auto">
+                <li v-for="image of data" :key="image.path" class="relative flex-shrink-0 snap-start scroll-ml-6 first:pl-6 last:pr-[calc(100%-21.5rem)]">
+                    <NuxtLink :to="image.path"><NuxtImg fit="cover" :src="image.pictures" width="300px" height="300px" class="rounded w-40  snap-center"  />
                     </NuxtLink>
                 </li>
             </ul>
@@ -43,6 +40,10 @@
           <li><a href="https://linkedin.com/in/craigmpeters" target="_new"><font-awesome :icon="faLinkedin" title="LinkedIn - craigmpeters" /></a></li>
         </ul>
       </nav>
+    <div id="main" class="flex-row md:flex-1 m-auto md:mr-64 p-5 md:p-10 md:min-h-screen">
+      <NuxtPage />
+    </div>
+
    
   </div>
 
