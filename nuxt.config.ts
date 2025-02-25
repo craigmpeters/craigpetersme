@@ -2,7 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-
+  content: {
+    preview: {
+      api: 'https://api.nuxt.studio'
+    } 
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
