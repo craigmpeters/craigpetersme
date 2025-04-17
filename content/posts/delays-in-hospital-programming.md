@@ -1,9 +1,11 @@
 ---
 title: Delays in Hospital Programming
 date: 2025-04-17T00:00:00.000Z
+excerpt:
+  type: This isn’t really an NHS thing or an actual hospital thing, I don’t really
+    have much I can say on those things but this is more about the entertainment
+    industry told through three hospitals
 ---
-
-# Delays In Hospital Programming
 
 This isn’t really an NHS thing or an actual hospital thing, I don’t really have much I can say on those things but this is more about the entertainment industry told through three hospitals:
 
