@@ -29,5 +29,9 @@ export default defineNuxtConfig({
     provider: "ipx"
   },
 
+  hub: {
+    blob: true
+  },
+
   compatibilityDate: '2025-02-23'
 })
