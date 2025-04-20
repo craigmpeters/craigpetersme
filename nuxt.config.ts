@@ -14,7 +14,12 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxt/content', '@nuxt/image','@vesp/nuxt-fontawesome'],
+  modules: [
+    '@nuxt/content',
+    '@nuxt/image',
+    '@vesp/nuxt-fontawesome',
+    '@nuxthub/core'
+  ],
 
   routeRules: {
     '/': { prerender: true }
