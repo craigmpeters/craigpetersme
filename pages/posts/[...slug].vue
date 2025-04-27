@@ -4,7 +4,7 @@
             <NuxtLink to="/">Back</NuxtLink>
         </nav>
         <h2 class="text-3xl pb-2 pt-1 text-orange-500">{{ post.title }}</h2>
-        <ContentRenderer v-if="post" :value="post" :excerpt=false tag="article" class="space-y-4 text-"  />
+        <ContentRenderer v-if="post" :value="post" :excerpt=false tag="article" class="space-y-4 text-" id="article"  />
     </div>
 </template>
 
@@ -18,6 +18,14 @@
         })
 </script>
 
-<style scoped>
+<style>
 
+    #article  > h2 {
+        font-size: 1.5rem;
+    }
+
+    #article > ul li {
+        margin-left: 1rem;
+        list-style-type:initial
+    }
 </style>
