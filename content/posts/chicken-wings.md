@@ -12,11 +12,11 @@ My main issue is with the fact that chicken wings have been missold by most plac
 
 Here is a couple of wings I got from Gert Wings at the festival:
 
-![Two chicken wings](/uploads/IMG_5518.jpeg)
+![Two chicken wings](/uploads/img-5518.jpeg)
 
 Now I wasn’t a big fan of the buffalo but the other one was great, and here is my favourite which was from Greedys along with a Sriracha Thai Wing
 
-![Two chicken wings](/uploads/IMG_5519.jpeg)
+![Two chicken wings](/uploads/img-5519.jpeg)
 
 However, when I buy chicken wings from a store they have both the flat of the wing and the drum (flats are superior) along with the much ignored ulna of the wing.
 
