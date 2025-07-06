@@ -30,7 +30,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/image',
     '@vesp/nuxt-fontawesome',
-    '@nuxthub/core'
+    '@nuxthub/core',
+    '@sidebase/nuxt-auth'
   ],
 
   routeRules: {
@@ -38,7 +39,10 @@ export default defineNuxtConfig({
   },
 
   image: {
-    provider: "ipx"
+    provider: "ipx",
+    quality: 75,
+    domains: ['craigpeters.me'],
+    
   },
 
   hub: {
