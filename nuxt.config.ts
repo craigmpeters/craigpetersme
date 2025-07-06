@@ -31,7 +31,6 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@vesp/nuxt-fontawesome',
     '@nuxthub/core',
-    '@sidebase/nuxt-auth'
   ],
 
   routeRules: {
