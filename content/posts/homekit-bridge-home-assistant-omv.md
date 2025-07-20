@@ -7,3 +7,6 @@ Openmediavault is a media management server which runs on Debian, as a core part
 Home Assistant is a system for managing home automation which brings a lot of different systems together and one of the things it can do is advertise this on HomeKit so that I can operate it using my phone, this is also done using zero config DNS.
 
 The problem is that these two systems conflict with each other so what we need to do is to get them to work together.
+
+::bluesky{url="https://bsky.app/profile/craigpeters.me/post/3lt4g24y2zs2d"}
+::
