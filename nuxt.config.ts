@@ -38,7 +38,8 @@ export default defineNuxtConfig({
   },
 
   image: {
-    provider: "ipxStatic",
+
+    provider: process.env.NODE_ENV === 'development' ? "ipx" : "ipxStatic",
     quality: 75,
     domains: ['craigpeters.me'],
     
@@ -47,11 +48,11 @@ export default defineNuxtConfig({
   hub: {
     blob: true
   },
-  nitro: {
-    prerender: {
-      routes: ['/'],
-      crawlLinks: true
-    }
-  },
+  // nitro: {
+  //   prerender: {
+  //     routes: ['/'],
+  //     crawlLinks: true
+  //   }
+  // },
   compatibilityDate: '2025-02-23'
 })
