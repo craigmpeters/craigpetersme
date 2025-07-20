@@ -6,8 +6,12 @@
 
 <script setup lang="ts">
     const html = ref<string | null>(null)
+
     const props = defineProps({
-        url: {type: String, required: true}
+        url: {
+            type: String,
+            required: true
+        }
     })
 
     const { data: result, error } = await useFetch('https://embed.bsky.app/oembed', {
