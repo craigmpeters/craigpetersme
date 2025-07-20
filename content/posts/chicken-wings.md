@@ -1,8 +1,7 @@
 ---
 date: 2025-05-25T00:00:00.000Z
+title: Why are we short changed on Chicken Wings?
 ---
-
-# Why are we short changed on Chicken Wings?
 
 I am a big fan of chicken wings, thighs are a very close second and honestly the rest of it I could take or leave unless unhealthily prepared with 11 herbs and spices.
 
