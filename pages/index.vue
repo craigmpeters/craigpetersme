@@ -3,8 +3,9 @@
         <div id="articles">
             <ul>
                 <li v-for="post of posts" :key="post.path">
+            
                     <h2 class="text-xl pb-2 pt-3 text-orange-500"><NuxtLink :to="post.path">{{ post.title }}</NuxtLink></h2>
-                    <ContentRenderer v-if="post" :value="post" :excerpt=true />
+                    {{ post.description }}
                 </li>
             </ul>
         </div>
