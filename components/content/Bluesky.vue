@@ -1,29 +1,31 @@
 <template>
-    <div class="blueSkyEmbed" v-html="html" v-if="html">
-
+    <div>
+        <div class="bsky-embed" v-html="html" v-if="html"></div>
     </div>
 </template>
 
 <script setup lang="ts">
-    const html = ref<string | null>(null)
+
+    // get color mode
+    const colorMode = useColorMode()
+    console.log (colorMode)
+
 
     const props = defineProps({
-        url: {
-            type: String,
-            required: true
-        }
+        url: {type: String, required: true}
     })
 
-    const { data: result, error } = await useFetch('https://embed.bsky.app/oembed', {
-        method: 'get',
-        query: {
-            url: props.url
-        }
+    const {data: html} = await useAsyncData("bluesky-embed", async () => {
+        const res = await $fetch<{ html: string }>('/api/bluesky-proxy', {
+            method: 'GET',
+            query: {
+                url: props.url
+            }
+        })
+        return res.html
+        
     })
-    html.value = (result?.value as { html?: string })?.html ?? null
-
 </script>
 
-<style scoped>
-
+<style>
 </style>

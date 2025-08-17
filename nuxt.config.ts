@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   content: {
     preview: {
       api: 'https://api.nuxt.studio'
-    } 
+    }
   },
   postcss: {
     plugins: {
@@ -31,11 +31,12 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@vesp/nuxt-fontawesome',
     '@nuxthub/core',
+    '@nuxtjs/color-mode'
   ],
 
-  routeRules: {
-    '/': { prerender: true }
-  },
+  // routeRules: {
+  //   '/': { prerender: process.env.NODE_ENV != 'development' }
+  // },
 
   image: {
 
@@ -52,7 +53,15 @@ export default defineNuxtConfig({
     prerender: {
       routes: ['/'],
       crawlLinks: true
+    },
+    routeRules: {
+      '/bsky-proxy/**': {
+        proxy: 'https://embed.bsky.app/**'
+      },
     }
   },
-  compatibilityDate: '2025-02-23'
+  compatibilityDate: '2025-02-23',
+  colorMode: {
+    classSuffix: ''
+  }
 })

@@ -9,7 +9,4 @@ Home Assistant is a system for managing home automation which brings a lot of di
 
 The problem is that these two systems conflict with each other so what we need to do is to get them to work together.
 
-::bluesky
----
-url: "https://bsky.app/profile/craigpeters.me/post/3lt4g24y2zs2d"
----
+:Bluesky{url="https://bsky.app/profile/craigpeters.me/post/3lt4g24y2zs2d"}
