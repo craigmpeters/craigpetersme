@@ -6,11 +6,6 @@
 
 <script setup lang="ts">
 
-    // get color mode
-    const colorMode = useColorMode()
-    console.log (colorMode)
-
-
     const props = defineProps({
         url: {type: String, required: true}
     })
@@ -23,7 +18,7 @@
             }
         })
         return res.html
-        
+
     })
 </script>
 
