@@ -1,11 +1,10 @@
 <template>
     <div>
         <div id="articles">
-            <ul>
-                <li v-for="post of posts" :key="post.path">
-            
-                    <h2 class="text-xl pb-2 pt-3 text-orange-500"><NuxtLink :to="post.path">{{ post.title }}</NuxtLink></h2>
-                    {{ post.description }}
+            <ul class="divide-y divide-gray-200 dark:divide-gray-600">
+                <li v-for="post of posts" :key="post.path" class="py-5">
+                    <h2 class="text-xl pb-1 text-orange-500 hover:text-orange-400 transition-colors"><NuxtLink :to="post.path">{{ post.title }}</NuxtLink></h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">{{ post.description }}</p>
                 </li>
             </ul>
         </div>

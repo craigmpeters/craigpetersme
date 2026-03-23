@@ -1,10 +1,10 @@
 <template>
     <div>
-        <nav class="text-sm">
-            <NuxtLink to="/">Back</NuxtLink>
+        <nav class="text-sm pb-4">
+            <NuxtLink to="/" class="text-gray-400 hover:text-orange-500 transition-colors">&larr; Back</NuxtLink>
         </nav>
         <h2 class="text-3xl pb-2 pt-1 text-orange-500">{{ post.title }}</h2>
-        <ContentRenderer v-if="post" :value="post" :excerpt=false tag="article" class="space-y-4 text-" id="article"  />
+        <ContentRenderer v-if="post" :value="post" :excerpt=false tag="article" class="space-y-4 text-base" id="article"  />
     </div>
 </template>
 
