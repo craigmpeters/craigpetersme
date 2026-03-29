@@ -62,7 +62,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ['/'],
+      routes: ['/', '/about', '/newsletter', '/clarity', '/clarity/privacy'],
       crawlLinks: true
     },
     routeRules: {
