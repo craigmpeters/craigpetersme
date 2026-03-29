@@ -34,6 +34,14 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     'nuxt-studio'
   ],
+    studio: {
+    repository: {
+      provider: 'github', 
+      owner: 'craigmpeters',
+      repo: 'craigpetersme',
+      branch: 'master'
+    }
+  },
 
   // routeRules: {
   //   '/': { prerender: process.env.NODE_ENV != 'development' }
