@@ -69,7 +69,7 @@ export default defineNuxtConfig({
       },
     },
     alias: {
-      'sharp': 'unenv/runtime/mock/empty'
+      'sharp': 'unenv/dist/runtime/mock/empty'
     }
   },
   compatibilityDate: '2025-02-23',
