@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { fileURLToPath } from 'node:url'
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -69,7 +71,7 @@ export default defineNuxtConfig({
       },
     },
     alias: {
-      'sharp': 'unenv/dist/runtime/mock/empty'
+      'sharp': fileURLToPath(new URL('./sharp-mock.mjs', import.meta.url))
     }
   },
   compatibilityDate: '2025-02-23',
