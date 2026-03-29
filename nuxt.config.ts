@@ -31,7 +31,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@vesp/nuxt-fontawesome',
     '@nuxthub/core',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    'nuxt-studio'
   ],
 
   // routeRules: {

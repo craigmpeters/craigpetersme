@@ -2,6 +2,13 @@ import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
 export default defineContentConfig({
   collections: {
+   docs: defineCollection({
+    source: {
+      include: '**/*.md',
+      exclude: ['posts/**', 'images/**']
+    },
+    type: 'page'
+    }),
     blog: defineCollection({
       // Load every file inside the `content` directory
       source: 'posts/**',
