@@ -67,6 +67,9 @@ export default defineNuxtConfig({
       '/bsky-proxy/**': {
         proxy: 'https://embed.bsky.app/**'
       },
+    },
+    alias: {
+      'sharp': 'unenv/runtime/mock/empty'
     }
   },
   compatibilityDate: '2025-02-23',
