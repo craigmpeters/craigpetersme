@@ -3,36 +3,46 @@ title: Clarity Task Manager
 description: Focus Timer & Task Manager for iPhone, iPad, Apple Watch and Mac
 ---
 
-<div style="display:flex;align-items:center;gap:1.5rem;margin-bottom:2rem">
-  <img src="/clarity/icon.jpg" alt="Clarity app icon" style="width:96px;height:96px;border-radius:22px;flex-shrink:0" />
-  <p>Clarity is a focus timer and task manager for iPhone, iPad, Apple Watch and Mac. Organise your tasks by category, set focused work sessions, and track your productivity over time — all with a clean, minimal dark interface.</p>
-</div>
+::div{style="display:flex;align-items:center;gap:1.5rem;margin-bottom:2rem"}
+![Clarity app icon](/clarity/icon.jpg){style="width:96px;height:96px;border-radius:22px;flex-shrink:0"}
 
+Clarity is a focus timer and task manager for iPhone, iPad, Apple Watch and Mac. Organise your tasks by category, set focused work sessions, and track your productivity over time — all with a clean, minimal dark interface.
+::
 
-<a href="https://apps.apple.com/us/app/6751516278"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="height:56px" /></a>
+![Download on the App Store](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg){style="height:56px"}
 
 ---
 
 ## Screenshots
 
-<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1.5rem 0">
-  <div>
-    <img src="/clarity/screenshots/1.webp" alt="Task list showing colour-coded tasks by category and date" style="width:100%;border-radius:12px" />
-    <p style="font-size:0.8rem;opacity:0.7;margin-top:0.5rem;text-align:center">Tasks organised by date and category</p>
-  </div>
-  <div>
-    <img src="/clarity/screenshots/2.webp" alt="Statistics screen showing 8 tasks completed, 3h 35m focus time, and per-category weekly targets" style="width:100%;border-radius:12px" />
-    <p style="font-size:0.8rem;opacity:0.7;margin-top:0.5rem;text-align:center">Weekly stats and progress targets</p>
-  </div>
-  <div>
-    <img src="/clarity/screenshots/3.webp" alt="Add Task screen with AI-powered task splitting, duration picker, and category tags" style="width:100%;border-radius:12px" />
-    <p style="font-size:0.8rem;opacity:0.7;margin-top:0.5rem;text-align:center">Add tasks with AI split suggestions</p>
-  </div>
-  <div>
-    <img src="/clarity/screenshots/4.webp" alt="Productivity heatmap by hour and daily breakdown showing current streak of 4 days" style="width:100%;border-radius:12px" />
-    <p style="font-size:0.8rem;opacity:0.7;margin-top:0.5rem;text-align:center">Heatmap, daily breakdown & streaks</p>
-  </div>
-</div>
+::div
+---
+style: display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1.5rem 0
+---
+  :::div
+  ![Task list showing colour-coded tasks by category and date](/clarity/screenshots/1.webp){style="width:100%;border-radius:12px"}
+
+  Tasks organised by date and category
+  :::
+
+  :::div
+  ![Statistics screen showing 8 tasks completed, 3h 35m focus time, and per-category weekly targets](/clarity/screenshots/2.webp){style="width:100%;border-radius:12px"}
+
+  Weekly stats and progress targets
+  :::
+
+  :::div
+  ![Add Task screen with AI-powered task splitting, duration picker, and category tags](/clarity/screenshots/3.webp){style="width:100%;border-radius:12px"}
+
+  Add tasks with AI split suggestions
+  :::
+
+  :::div
+  ![Productivity heatmap by hour and daily breakdown showing current streak of 4 days](/clarity/screenshots/4.webp){style="width:100%;border-radius:12px"}
+
+  Heatmap, daily breakdown & streaks
+  :::
+::
 
 ---
 
@@ -57,4 +67,4 @@ If you enjoy Clarity, consider buying me a coffee!
 
 ## Privacy Policy
 
-[Click hre for Privacy Policy](/clarity/privacy)
+[Click here for Privacy Policy](/clarity/privacy)
