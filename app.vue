@@ -98,11 +98,6 @@
             <font-awesome :icon="faUser" class="w-4 shrink-0" /> About
           </NuxtLink>
         </li>
-        <li>
-          <NuxtLink to="/newsletter" class="flex items-center gap-2.5 px-3 py-2 rounded hover:bg-black/10 dark:hover:bg-white/10 transition-colors">
-            <font-awesome :icon="faEnvelope" class="w-4 shrink-0" /> Newsletter
-          </NuxtLink>
-        </li>
       </ul>
 
       <div class="border-t border-black/10 dark:border-white/10 pt-3">
@@ -150,11 +145,6 @@
           <li>
             <NuxtLink to="/about" class="flex items-center gap-2.5 px-3 py-2 rounded hover:bg-black/10 transition-colors" active-class="bg-black/10">
               <font-awesome :icon="faUser" class="w-4 shrink-0" /> About
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/newsletter" class="flex items-center gap-2.5 px-3 py-2 rounded hover:bg-black/10 transition-colors" active-class="bg-black/10">
-              <font-awesome :icon="faEnvelope" class="w-4 shrink-0" /> Newsletter
             </NuxtLink>
           </li>
         </ul>
