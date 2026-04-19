@@ -59,12 +59,6 @@ style: display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1.5rem 0
 
 ---
 
-## Support the App
-
-If you enjoy Clarity, consider buying me a coffee!
-
-[☕ Buy Me a Coffee](https://buymeacoffee.com/craigmpeters)
-
 ## Privacy Policy
 
 [Click here for Privacy Policy](/clarity/privacy)

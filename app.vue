@@ -1,6 +1,6 @@
 <script setup>
   import {faLetterboxd, faBluesky, faGithub, faDiscord, faFlickr, faLinkedin, faGoodreads} from '@fortawesome/free-brands-svg-icons'
-  import { faAt } from '@fortawesome/free-solid-svg-icons'
+  import { faAt, faMugHot } from '@fortawesome/free-solid-svg-icons'
 
   const route = useRoute()
   const carousel = ref(null)
@@ -56,6 +56,7 @@
           <li><a href="https://www.flickr.com/photos/craigmpeters/" target="_new" class="hover:text-orange-300 transition-colors"><font-awesome :icon="faFlickr" title="Flickr - craigmpeters" /></a></li>
           <li><a href="https://linkedin.com/in/craigmpeters" target="_new" class="hover:text-orange-300 transition-colors"><font-awesome :icon="faLinkedin" title="LinkedIn - craigmpeters" /></a></li>
           <li><a href="https://www.goodreads.com/user/show/187014383-craig-peters" target="_new" class="hover:text-orange-300 transition-colors"><font-awesome :icon="faGoodreads" title="Goodreads" /></a></li>
+          <li><a href="https://buymeacoffee.com/craigmpeters" target="_new" class="hover:text-orange-300 transition-colors"><font-awesome :icon="faMugHot" title="Buy Me a Coffee" /></a></li>
         </ul>
       </nav>
     <div id="main" class="flex-row md:flex-1 m-auto md:mr-64 p-5 md:p-10 md:min-h-screen">
