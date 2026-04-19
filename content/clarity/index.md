@@ -4,7 +4,7 @@ description: Focus Timer & Task Manager for iPhone, iPad, Apple Watch and Mac
 ---
 
 ::div{style="display:flex;align-items:center;gap:1.5rem;margin-bottom:2rem"}
-![Clarity app icon](/clarity/icon.jpg){style="width:96px;height:96px;border-radius:22px;flex-shrink:0"}
+![Clarity app icon](/clarity/icon.jpg){width="96" height="96" style="border-radius:22px;flex-shrink:0"}
 
 Clarity is a focus timer and task manager for iPhone, iPad, Apple Watch and Mac. Organise your tasks by category, set focused work sessions, and track your productivity over time — all with a clean, minimal dark interface.
 ::
