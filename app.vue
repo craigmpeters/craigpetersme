@@ -6,6 +6,22 @@
   const carousel = ref(null)
   const mobileMenuOpen = ref(false)
 
+  // Detect Nuxt Studio — it injects a <nuxt-studio> element into the page
+  const isStudio = ref(false)
+  onMounted(() => {
+    isStudio.value = !!document.querySelector('nuxt-studio')
+    if (!isStudio.value) {
+      const observer = new MutationObserver(() => {
+        if (document.querySelector('nuxt-studio')) {
+          isStudio.value = true
+          observer.disconnect()
+        }
+      })
+      observer.observe(document.body, { childList: true, subtree: true })
+      onUnmounted(() => observer.disconnect())
+    }
+  })
+
   // Close mobile menu on navigation
   watch(() => route.path, () => { mobileMenuOpen.value = false })
 
@@ -45,8 +61,8 @@
 <template>
   <div class="dark:bg-gray-800 dark:text-white min-h-screen">
 
-    <!-- Mobile: sticky top bar -->
-    <header class="md:hidden sticky top-0 z-50 bg-amber-50 dark:bg-orange-900 px-4 py-3 flex items-center justify-between shadow-sm border-b border-black/10 dark:border-white/10">
+    <!-- Mobile: sticky top bar (also used in Nuxt Studio) -->
+    <header :class="isStudio ? '' : 'md:hidden'" class="sticky top-0 z-50 bg-amber-50 dark:bg-orange-900 px-4 py-3 flex items-center justify-between shadow-sm border-b border-black/10 dark:border-white/10">
       <button
         @click="mobileMenuOpen = !mobileMenuOpen"
         class="p-1.5 rounded hover:bg-black/10 dark:hover:bg-white/10 transition-colors"
@@ -60,10 +76,11 @@
       <div class="w-8" /><!-- balance spacer -->
     </header>
 
-    <!-- Mobile: collapsible nav drawer -->
+    <!-- Mobile/Studio: collapsible nav drawer -->
     <div
       v-show="mobileMenuOpen"
-      class="md:hidden bg-amber-50 dark:bg-orange-900 px-5 py-4 border-b border-black/10 dark:border-white/10 z-40"
+      :class="isStudio ? '' : 'md:hidden'"
+      class="bg-amber-50 dark:bg-orange-900 px-5 py-4 border-b border-black/10 dark:border-white/10 z-40"
     >
       <ul class="flex flex-col gap-0.5 text-sm font-semibold mb-4">
         <li>
@@ -107,8 +124,8 @@
     <!-- Desktop layout -->
     <div class="md:flex">
 
-      <!-- Desktop: fixed left sidebar -->
-      <nav class="hidden md:flex md:w-64 md:fixed md:left-0 md:top-0 md:h-screen bg-amber-50 dark:bg-orange-900 text-gray-800 dark:text-white py-8 px-5 flex-col gap-6 overflow-y-auto">
+      <!-- Desktop: fixed left sidebar (hidden in Nuxt Studio) -->
+      <nav :class="isStudio ? 'hidden' : 'hidden md:flex'" class="md:w-64 md:fixed md:left-0 md:top-0 md:h-screen bg-amber-50 dark:bg-orange-900 text-gray-800 dark:text-white py-8 px-5 flex-col gap-6 overflow-y-auto">
 
         <!-- Title -->
         <div>
@@ -174,7 +191,7 @@
       </nav>
 
       <!-- Main content -->
-      <div id="main" class="w-full md:ml-64 p-5 md:p-10 md:min-h-screen">
+      <div id="main" :class="isStudio ? '' : 'md:ml-64'" class="w-full p-5 md:p-10 md:min-h-screen">
         <NuxtPage />
       </div>
 
