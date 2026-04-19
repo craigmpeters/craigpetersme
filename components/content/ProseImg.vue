@@ -1,11 +1,18 @@
 <script setup>
-defineProps({
+defineOptions({ inheritAttrs: false })
+
+const props = defineProps({
   src: String,
   alt: String,
   width: [String, Number],
   height: [String, Number],
   title: String,
 })
+
+const attrs = useAttrs()
+
+// If explicit dimensions or inline style provided, respect them and skip full-width behaviour
+const hasExplicitSize = computed(() => props.width || props.height || attrs.style)
 
 const lightboxOpen = ref(false)
 const open = () => { lightboxOpen.value = true }
@@ -17,18 +24,21 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeydown))
 </script>
 
 <template>
-  <span class="block my-4 text-center">
+  <span class="block my-4" :class="hasExplicitSize ? '' : 'text-center'">
     <img
       :src="src"
       :alt="alt"
       :title="title || alt"
-      class="w-full rounded cursor-zoom-in object-cover shadow-sm hover:shadow-md transition-shadow"
-      @click="open"
+      v-bind="attrs"
+      :class="hasExplicitSize
+        ? 'rounded'
+        : 'w-full rounded cursor-zoom-in object-cover shadow-sm hover:shadow-md transition-shadow'"
+      @click="hasExplicitSize ? undefined : open()"
     />
-    <span v-if="alt" class="block text-sm text-gray-500 dark:text-gray-400 mt-1.5 italic">{{ alt }}</span>
+    <span v-if="alt && !hasExplicitSize" class="block text-sm text-gray-500 dark:text-gray-400 mt-1.5 italic">{{ alt }}</span>
   </span>
 
-  <Teleport to="body">
+  <Teleport v-if="!hasExplicitSize" to="body">
     <Transition name="lightbox">
       <div
         v-if="lightboxOpen"
