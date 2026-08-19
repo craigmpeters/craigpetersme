@@ -32,7 +32,6 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/image',
     '@vesp/nuxt-fontawesome',
-    '@nuxthub/core',
     '@nuxtjs/color-mode',
     'nuxt-studio'
   ],
@@ -55,10 +54,6 @@ export default defineNuxtConfig({
     quality: 75,
     domains: ['craigpeters.me'],
     
-  },
-
-  hub: {
-    blob: true
   },
   nitro: {
     prerender: {
