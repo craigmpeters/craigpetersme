@@ -14,6 +14,6 @@
 
 <script setup>
   const { data: posts } = await useAsyncData('allPosts', () =>
-    queryCollection('blog').order('date', 'DESC').all()
+    queryCollection('blog').where('draft', '=', false).order('date', 'DESC').all()
   )
 </script>

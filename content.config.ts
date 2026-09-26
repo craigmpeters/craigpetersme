@@ -1,33 +1,41 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
+// Front matter schemas. Templates for new files live in /templates.
 export default defineContentConfig({
   collections: {
-   docs: defineCollection({
-    source: {
-      include: '**/*.md',
-      exclude: ['posts/**', 'images/**']
-    },
-    type: 'page'
-    }),
-    blog: defineCollection({
-      // Load every file inside the `content` directory
-      source: 'posts/**',
-      // Specify the type of content in this collection
+    // Stand-alone pages, e.g. /about, /clarity, /clarity/privacy
+    docs: defineCollection({
       type: 'page',
+      source: {
+        include: '**/*.md',
+        exclude: ['posts/**', 'images/**']
+      },
       schema: z.object({
-        date: z.date(),
-        excerpt: z.object({
-          type: z.string(),
-          children: z.any(),
-        })
+        title: z.string(),
+        description: z.string().optional()
       })
     }),
-    images: defineCollection({
-      source: 'images/**',
+    // Blog posts: content/posts/<slug>.md
+    blog: defineCollection({
       type: 'page',
+      source: 'posts/**',
       schema: z.object({
-        pictures: z.string(),
-        date: z.date()
+        title: z.string(),
+        description: z.string().optional(),
+        date: z.date(),
+        draft: z.boolean().default(false)
+      })
+    }),
+    // Photo pages: content/images/<slug>.md
+    images: defineCollection({
+      type: 'page',
+      source: 'images/**',
+      schema: z.object({
+        title: z.string(),
+        description: z.string().optional(),
+        date: z.date(),
+        draft: z.boolean().default(false),
+        pictures: z.string()
       })
     })
   }

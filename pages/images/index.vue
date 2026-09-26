@@ -19,6 +19,6 @@
 
 <script setup>
   const { data: images } = await useAsyncData('allImages', () =>
-    queryCollection('images').order('date', 'DESC').all()
+    queryCollection('images').where('draft', '=', false).order('date', 'DESC').all()
   )
 </script>

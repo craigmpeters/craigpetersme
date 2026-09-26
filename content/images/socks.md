@@ -1,10 +1,8 @@
 ---
 title: Socks
-seo:
-  title: Socks file
-  description: ""
+date: 2026-04-19T00:00:00.000Z
+draft: false
 pictures: /uploads/IMG-0645.jpeg
-date: 2026-04-19 00:00:00
 ---
 
 # Socks file

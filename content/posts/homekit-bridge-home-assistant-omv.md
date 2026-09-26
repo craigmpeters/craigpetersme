@@ -1,7 +1,8 @@
 ---
 title: Getting HomeKit Bridge working on Home Assistant with Openmediavault
-date: 2025-07-20T00:00:00.000Z
 description: Openmediavault is a media management server which runs on Debian, as a core part of this it uses zero config DNS to advertise the services it uses like SMB, File Services, Time Machine and that kind of thing. I like using it as it allows me to run docker containers as well as serve off a bunch of files.
+date: 2025-07-20T00:00:00.000Z
+draft: false
 ---
 
 Openmediavault is a media management server which runs on Debian, as a core part of this it uses zero config DNS to advertise the services it uses like SMB, File Services, Time Machine and that kind of thing. I like using it as it allows me to run docker containers as well as serve off a bunch of files.
