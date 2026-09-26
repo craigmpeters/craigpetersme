@@ -44,10 +44,10 @@
 <script setup>
   const [{ data: posts }, { data: images }] = await Promise.all([
     useAsyncData('indexPosts', () =>
-      queryCollection('blog').order('date', 'DESC').limit(3).all()
+      queryCollection('blog').where('draft', '=', false).order('date', 'DESC').limit(3).all()
     ),
     useAsyncData('indexImages', () =>
-      queryCollection('images').order('date', 'DESC').limit(6).all()
+      queryCollection('images').where('draft', '=', false).order('date', 'DESC').limit(6).all()
     )
   ])
 </script>

@@ -1,7 +1,7 @@
 ---
 title: On the subject of content management systems
-date: 2018-04-08T19:37:04.000Z
 description: Content Management Systems have traditionally been systems developed on a platform which runs some code, hosts some files, and stores data around the content and application in the database.
+date: 2018-04-08T19:37:04.000Z
 draft: false
 ---
 

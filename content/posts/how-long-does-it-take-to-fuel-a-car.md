@@ -1,10 +1,8 @@
 ---
 title: How long does it take to fuel a car?
-description: Every so often on social media I see a pet where someone says "it takes me 5 minutes to fuel my car and I get loads of range, EVs can't do that.  Initially I thought, yeah you have a point but then I thought about it more
-seo:
-  title: How-long-does-it-take-to-fuel-a-car file
-  description: E
-date: 2026-04-22 00:00:00
+description: Every so often on social media I see a pet where someone says "it takes me 5 minutes to fuel my car and I get loads of range, EVs can't do that. Initially I thought, yeah you have a point but then I thought about it more
+date: 2026-04-22T00:00:00.000Z
+draft: false
 ---
 
 Every so often on social media I see a pet where someone says "it takes me 5 minutes to fuel my car and I get loads of range, EVs can't do that. Initially I thought, yeah you have a point but then I thought about it more and that is kinda missing the point. 

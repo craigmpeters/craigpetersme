@@ -1,6 +1,7 @@
 ---
 title: Responsible disclosure
-date: 2018-04-14T20:54:00+01:00
+description: People make mistakes, this is why in software engineering testing is as important a role in development as developing the software itself. if you cannot as a team delivery software which is reliable…
+date: 2018-04-14T19:54:00.000Z
 draft: false
 ---
 

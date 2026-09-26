@@ -1,7 +1,8 @@
 ---
 title: Why are we short changed on Chicken Wings?
-date: 2025-05-25T00:00:00.000Z
 description: I am a big fan of chicken wings, thighs are a very close second and honestly the rest of it I could take or leave unless unhealthily prepared with 11 herbs and spices.
+date: 2025-05-25T00:00:00.000Z
+draft: false
 ---
 
 I am a big fan of chicken wings, thighs are a very close second and honestly the rest of it I could take or leave unless unhealthily prepared with 11 herbs and spices.

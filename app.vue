@@ -44,6 +44,7 @@
 
   const { data } = await useAsyncData('images', () => {
     return queryCollection('images')
+      .where('draft', '=', false)
       .order('date', 'DESC')
       .limit(6)
       .all()
