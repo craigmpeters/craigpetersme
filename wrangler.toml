@@ -1,1 +1,14 @@
-    keep_vars = true
+# Cloudflare Workers Builds config for craigpeters.me
+# Build command: npm run build   |   Deploy command: npx wrangler deploy
+name = "craigpetersme"
+main = ".output/server/index.mjs"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+keep_vars = true
+
+[assets]
+directory = ".output/public"
+binding = "ASSETS"
+
+[observability]
+enabled = true

@@ -9,12 +9,12 @@ export default defineNuxtConfig({
         lang: "en"
       },
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/public/icons/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/icons/favicon.ico' }
       ]
     },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
-  devtools: { enabled: true },
+  devtools: { enabled: process.env.NODE_ENV === 'development' },
   css: ['~/assets/css/main.css'],
   content: {
     preview: {
@@ -56,6 +56,11 @@ export default defineNuxtConfig({
     
   },
   nitro: {
+    preset: 'cloudflare_module',
+    cloudflare: {
+      deployConfig: false,
+      nodeCompat: true
+    },
     prerender: {
       routes: ['/', '/about', '/newsletter', '/clarity', '/clarity/privacy'],
       crawlLinks: true
@@ -64,9 +69,6 @@ export default defineNuxtConfig({
       '/bsky-proxy/**': {
         proxy: 'https://embed.bsky.app/**'
       },
-    },
-    alias: {
-      'sharp': fileURLToPath(new URL('./sharp-mock.mjs', import.meta.url))
     }
   },
   compatibilityDate: '2025-02-23',
