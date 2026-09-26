@@ -1,6 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { fileURLToPath } from 'node:url'
 
+// Nuxt Studio is only bundled when GitHub OAuth is configured for the build
+// (or in local dev). This prevents a production build with no auth and a
+// predictable session secret. See README "Nuxt Studio" for the required variables.
+const studioEnabled = process.env.NODE_ENV === 'development'
+  || Boolean(process.env.STUDIO_GITHUB_CLIENT_ID && process.env.STUDIO_GITHUB_CLIENT_SECRET)
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -33,7 +39,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@vesp/nuxt-fontawesome',
     '@nuxtjs/color-mode',
-    'nuxt-studio'
+    ...(studioEnabled ? ['nuxt-studio'] : [])
   ],
     studio: {
     repository: {
