@@ -4,10 +4,22 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
+    # Rebuild PRs against the latest master so lockfiles stay in sync
+    rebase-strategy: auto
+    open-pull-requests-limit: 5
     groups:
       nuxt:
         patterns: ["nuxt", "@nuxt/*", "nuxt-*", "@nuxtjs/*"]
-  - package-ecosystem: github-actions
-    directory: "/"
-    schedule:
-      interval: monthly
+      fontawesome:
+        patterns: ["@fortawesome/*"]
+      minor-and-patch:
+        update-types: ["minor", "patch"]
+    ignore:
+      # 2.1.x pulls ipx 4 beta, which silently stops the prerender (see README)
+      - dependency-name: "@nuxt/image"
+        versions: ["2.1.x"]
+      # Major upgrades need code changes; do them by hand
+      - dependency-name: "tailwindcss"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@fortawesome/*"
+        update-types: ["version-update:semver-major"]
