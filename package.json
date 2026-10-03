@@ -21,6 +21,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@nuxtjs/color-mode": "^4.0.1",
     "autoprefixer": "^10.6.1",
+    "cac": "^6.7.14",
+    "commander": "^15.0.0",
     "postcss": "^8.5.28",
     "tailwindcss": "^3.4.14",
     "wrangler": "^4.141.0"
