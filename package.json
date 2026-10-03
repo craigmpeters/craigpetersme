@@ -16,9 +16,9 @@
     "nuxt-studio": "^1.7.0"
   },
   "devDependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.7.2",
-    "@fortawesome/free-regular-svg-icons": "^6.7.2",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^7.3.0",
+    "@fortawesome/free-regular-svg-icons": "^7.3.0",
+    "@fortawesome/free-solid-svg-icons": "^7.3.0",
     "@nuxtjs/color-mode": "^4.0.1",
     "autoprefixer": "^10.6.1",
     "cac": "^6.7.14",
@@ -29,6 +29,7 @@
   },
   "overrides": {
     "@nuxtjs/mdc": "^0.23.1",
-    "sharp": "^0.35.4"
+    "sharp": "^0.35.4",
+    "vite": "npm:rolldown-vite@latest"
   }
 }
