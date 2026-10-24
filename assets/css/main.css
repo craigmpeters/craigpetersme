@@ -3,6 +3,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Match the browser canvas and overscroll areas to the page theme. */
+html {
+  color-scheme: light;
+}
+
+html,
+body {
+  @apply bg-white;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark,
+html.dark body {
+  @apply bg-gray-800;
+}
+
 body {
   font-family: 'Lexend', sans-serif;
 }
