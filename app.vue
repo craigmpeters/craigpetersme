@@ -81,7 +81,7 @@
     <div
       v-show="mobileMenuOpen"
       :class="isStudio ? '' : 'md:hidden'"
-      class="bg-amber-50 dark:bg-orange-900 px-5 py-4 border-b border-black/10 dark:border-white/10 z-40"
+      class="bg-amber-50 dark:bg-orange-900 px-5 py-4 border-b border-black/10 dark:border-white/10 z-40 w-screen"
     >
       <ul class="flex flex-col gap-0.5 text-sm font-semibold mb-4">
         <li>
