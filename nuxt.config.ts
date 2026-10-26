@@ -16,7 +16,11 @@ export default defineNuxtConfig({
       },
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/icons/favicon.ico' }
-      ]
+      ],
+      meta: [
+        { name: 'viewport',
+          content: 'width=device-width, initial-scale=1, viewport-fit=cover'
+        }
     },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
