@@ -63,7 +63,7 @@
   <div class="dark:bg-gray-800 dark:text-white min-h-screen">
 
     <!-- Mobile: sticky top bar (also used in Nuxt Studio) -->
-    <header :class="isStudio ? '' : 'md:hidden'" class="sticky top-0 z-50 bg-amber-50 dark:bg-orange-900 px-4 py-3 flex items-center justify-between shadow-sm border-b border-black/10 dark:border-white/10">
+    <header :class="isStudio ? '' : 'md:hidden'" class="sticky top-0 z-50 bg-amber-50 dark:bg-orange-900 px-4 py-3 -mr-[env(safe-area-inset-right)] flex items-center justify-between shadow-sm border-b border-black/10 dark:border-white/10">
       <button
         @click="mobileMenuOpen = !mobileMenuOpen"
         class="p-1.5 rounded hover:bg-black/10 dark:hover:bg-white/10 transition-colors"
