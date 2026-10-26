@@ -25,6 +25,11 @@ html.dark body {
 body {
   font-family: 'Lexend', sans-serif;
 }
+
+header {
+  viewport-fit="cover"
+  }
+
 .dark {
   color: white;
 }
