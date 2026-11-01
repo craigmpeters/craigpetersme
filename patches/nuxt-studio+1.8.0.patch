@@ -1,0 +1,10 @@
+--- a/node_modules/nuxt-studio/dist/module/runtime/server/routes/auth/github.get.js
++++ b/node_modules/nuxt-studio/dist/module/runtime/server/routes/auth/github.get.js
+@@ -61,6 +61,7 @@
+     });
+   }
+   const token = await requestAccessToken(config.tokenURL, {
++    headers: { Accept: "application/json" },
+     body: {
+       grant_type: "authorization_code",
+       client_id: config.clientId,
