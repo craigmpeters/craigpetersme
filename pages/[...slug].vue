@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-3xl pb-2 pt-1 text-orange-500">{{ page?.title }}</h2>
+    <h2 v-if="route.path.replace(/\/$/, '') !== '/clarity'" class="text-3xl pb-2 pt-1 text-orange-500">{{ page?.title }}</h2>
     <ContentRenderer v-if="page" :value="page" tag="article" class="space-y-4 text-base" id="article" />
   </div>
 </template>
