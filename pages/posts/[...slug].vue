@@ -3,8 +3,8 @@
         <nav class="text-sm pb-4">
             <NuxtLink to="/" class="text-gray-400 hover:text-orange-500 transition-colors">&larr; Back</NuxtLink>
         </nav>
-        <h2 class="text-3xl pb-2 pt-1 text-orange-500">{{ post.title }}</h2>
-        <ContentRenderer v-if="post" :value="post" :excerpt=false tag="article" class="space-y-4 text-base max-w-prose" id="article"  />
+        <h1 v-if="post" class="article-title">{{ post.title }}</h1>
+        <ContentRenderer v-if="post" :value="post" :excerpt=false tag="article" class="article-prose"  />
     </div>
 </template>
 
@@ -17,15 +17,3 @@
             .first()
         })
 </script>
-
-<style>
-
-    #article  > h2 {
-        font-size: 1.5rem;
-    }
-
-    #article > ul li {
-        margin-left: 1rem;
-        list-style-type:initial
-    }
-</style>
