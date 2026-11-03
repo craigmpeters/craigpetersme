@@ -182,7 +182,7 @@
       </nav>
 
       <!-- Main content -->
-      <div id="main" :class="isStudio ? '' : 'md:ml-64'" class="w-full p-5 md:p-10 md:min-h-screen">
+      <div id="main" :class="isStudio ? '' : 'md:ml-64'" class="min-w-0 w-full md:w-auto p-5 md:p-10 md:min-h-screen">
         <NuxtPage />
       </div>
 

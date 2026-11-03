@@ -1,0 +1,133 @@
+/* Shared typography for every blog post. Keep embedded components self-contained. */
+.article-title {
+  @apply text-orange-500;
+  max-width: 24ch;
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.875rem, 4vw, 2.75rem);
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  overflow-wrap: anywhere;
+}
+
+.article-prose {
+  --article-border: #d1d5db;
+  --article-surface: #f3f4f6;
+  --article-link: #b45309;
+  max-width: 70ch;
+  min-width: 0;
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.dark .article-prose {
+  --article-border: #4b5563;
+  --article-surface: #253244;
+  --article-link: #fdba74;
+  color: #e5e7eb;
+}
+
+.article-prose :where(p, ul, ol, dl, blockquote, pre, figure, .article-table) {
+  margin-block: 1.25rem;
+}
+
+.article-prose :where(h1, h2, h3, h4, h5, h6) {
+  margin-block: 2.25rem 0.75rem;
+  color: inherit;
+  font-weight: 650;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  scroll-margin-top: 2rem;
+}
+
+.article-prose h1 { font-size: 2rem; }
+.article-prose h2 { font-size: 1.6rem; }
+.article-prose h3 { font-size: 1.3rem; }
+.article-prose :where(h4, h5, h6) { font-size: 1.1rem; }
+.article-prose :where(h1, h2, h3, h4, h5, h6) + :where(p, ul, ol) { margin-top: 0; }
+
+.article-prose :where(p, li, dd, blockquote, td, th) a {
+  color: var(--article-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+.article-prose a:hover { text-decoration-thickness: 2px; }
+.article-prose a:focus-visible {
+  outline: 2px solid var(--article-link);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+.article-prose :where(h1, h2, h3, h4, h5, h6) a { color: inherit; }
+
+.article-prose :where(ul, ol) { padding-left: 1.6rem; }
+.article-prose ul { list-style: disc; }
+.article-prose ol { list-style: decimal; }
+.article-prose ul ul { list-style: circle; }
+.article-prose li { padding-left: 0.3rem; margin-block: 0.45rem; }
+.article-prose li::marker { color: var(--article-link); font-weight: 600; }
+.article-prose li :where(ul, ol, p) { margin-block: 0.5rem; }
+.article-prose dt { font-weight: 650; }
+.article-prose dd { margin: 0.5rem 0 1rem 1.5rem; }
+
+.article-prose blockquote {
+  border-left: 3px solid var(--article-link);
+  border-radius: 0 0.5rem 0.5rem 0;
+  background: var(--article-surface);
+  padding: 1rem 1.25rem;
+}
+.article-prose blockquote > :first-child { margin-top: 0; }
+.article-prose blockquote > :last-child { margin-bottom: 0; }
+.article-prose strong { font-weight: 700; }
+.article-prose :not(pre) > code {
+  background: var(--article-surface);
+  border: 1px solid var(--article-border);
+  border-radius: 0.25rem;
+  padding: 0.1em 0.3em;
+  font-size: 0.875em;
+}
+.article-prose pre {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--article-border);
+  border-radius: 0.5rem;
+  background: var(--article-surface);
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  overflow-wrap: normal;
+}
+.article-prose pre code { display: block; min-width: max-content; }
+.article-prose hr { border-color: var(--article-border); margin-block: 2.5rem; }
+.article-prose figcaption { margin-top: 0.5rem; font-size: 0.875rem; }
+
+.article-prose .article-table {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--article-border);
+  border-radius: 0.5rem;
+}
+.article-prose .article-table:focus-visible {
+  outline: 2px solid var(--article-link);
+  outline-offset: 3px;
+}
+.article-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow-wrap: normal;
+}
+.article-prose :where(th, td) {
+  min-width: 7rem;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+.article-prose th { background: var(--article-surface); font-weight: 650; }
+.article-prose tbody tr { border-top: 1px solid var(--article-border); }
+.article-prose tbody tr:nth-child(even) { background: var(--article-surface); }
+.article-prose > :first-child { margin-top: 0; }
+.article-prose > :last-child { margin-bottom: 0; }
