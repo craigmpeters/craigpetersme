@@ -16,4 +16,6 @@
             .path(route.path)
             .first()
         })
+
+useSocialMeta(post, true)
 </script>

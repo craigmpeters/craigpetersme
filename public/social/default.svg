@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fffbeb"/>
+  <path d="M0 0H1200V16H0Z" fill="#ea580c"/>
+  <circle cx="1110" cy="480" r="255" fill="#fed7aa"/>
+  <circle cx="1110" cy="480" r="175" fill="none" stroke="#fb923c" stroke-width="2"/>
+  <path d="M1000 180h90v90h-90z" fill="#ea580c" transform="rotate(12 1045 225)"/>
+  <text x="80" y="135" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="4" fill="#9a3412">CRAIGPETERS.ME</text>
+  <text x="75" y="300" font-family="Arial, sans-serif" font-size="100" font-weight="700" letter-spacing="-4" fill="#1f2937">Craig Peters</text>
+  <text x="80" y="380" font-family="Arial, sans-serif" font-size="34" fill="#4b5563">Thoughts, discoveries</text>
+  <text x="80" y="428" font-family="Arial, sans-serif" font-size="34" fill="#4b5563">&amp; occasional tangents.</text>
+  <path d="M80 516h64" stroke="#ea580c" stroke-width="6"/>
+  <text x="80" y="568" font-family="Arial, sans-serif" font-size="24" fill="#9a3412">The blag.</text>
+</svg>

@@ -12,6 +12,8 @@ const { data: image } = await useAsyncData(route.path, () => {
         .path(route.path)
         .first()
     })
+
+useSocialMeta(image, true)
 </script>
 
 <style lang="scss" scoped>
