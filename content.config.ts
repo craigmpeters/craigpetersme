@@ -12,7 +12,9 @@ export default defineContentConfig({
       },
       schema: z.object({
         title: z.string(),
-        description: z.string().optional()
+        description: z.string().optional(),
+        shareImage: z.string().optional(),
+        shareImageAlt: z.string().optional()
       })
     }),
     // Blog posts: content/posts/<slug>.md
@@ -22,6 +24,8 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string(),
         description: z.string().optional(),
+        shareImage: z.string().optional(),
+        shareImageAlt: z.string().optional(),
         date: z.date(),
         draft: z.boolean().default(false)
       })
@@ -33,6 +37,8 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string(),
         description: z.string().optional(),
+        shareImage: z.string().optional(),
+        shareImageAlt: z.string().optional(),
         date: z.date(),
         draft: z.boolean().default(false),
         pictures: z.string()

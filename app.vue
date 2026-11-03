@@ -50,13 +50,7 @@
       .all()
   })
 
-  useSeoMeta({
-    title: "Craigpeters.me Blag",
-    ogTitle: "Blag Home",
-    description: "Blog of Craig Peters, I talk about random stuff which is terrible for SEO but I am including this which is good for SEO",
-    ogDescription: "A homepage of delights by Craig Peters",
-    ogImage: "https://www.craigpeters.me/public/title-starbucks.gif"
-  })
+  useSocialMeta()
 </script>
 
 <template>
