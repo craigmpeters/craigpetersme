@@ -22,10 +22,10 @@
     "@nuxtjs/color-mode": "^4.1.0",
     "autoprefixer": "^10.6.2",
     "cac": "^7.1.0",
-    "commander": "^15.0.0",
+    "commander": "^15.1.0",
     "postcss": "^8.5.32",
     "tailwindcss": "^3.4.14",
-    "wrangler": "^4.157.0"
+    "wrangler": "^4.160.0"
   },
   "overrides": {
     "@nuxtjs/mdc": "^0.23.1",
