@@ -1,75 +1,38 @@
 <script setup>
 defineOptions({ inheritAttrs: false })
-
 const props = defineProps({
   src: String,
   alt: String,
   width: [String, Number],
   height: [String, Number],
   title: String,
+  float: { type: String, validator: value => ['left', 'right'].includes(value) },
+  size: { type: String, validator: value => ['small', 'medium', 'full'].includes(value) },
+  caption: String,
 })
-
-const attrs = useAttrs()
-
-// If explicit dimensions or inline style provided, respect them and skip full-width behaviour
-const hasExplicitSize = computed(() => props.width || props.height || attrs.style)
-
-const lightboxOpen = ref(false)
-const open = () => { lightboxOpen.value = true }
-const close = () => { lightboxOpen.value = false }
-
-const handleKeydown = (e) => { if (e.key === 'Escape') close() }
-onMounted(() => window.addEventListener('keydown', handleKeydown))
-onUnmounted(() => window.removeEventListener('keydown', handleKeydown))
+const layoutSize = computed(() => props.size || (props.float ? 'medium' : 'full'))
+const sizes = computed(() => props.width
+  ? `100vw sm:${props.width}px`
+  : layoutSize.value === 'small' ? '100vw sm:200px'
+    : layoutSize.value === 'medium' ? '100vw sm:320px' : '100vw md:60vw lg:700px')
+const wrapperStyle = computed(() => props.width ? { maxWidth: `${Number(props.width)}px` } : undefined)
 </script>
 
 <template>
-  <span class="block my-4" :class="hasExplicitSize ? '' : 'text-center'">
-    <img
-      :src="src"
-      :alt="alt"
-      :title="title || alt"
-      v-bind="attrs"
-      :class="hasExplicitSize
-        ? 'rounded'
-        : 'w-full rounded cursor-zoom-in object-cover shadow-sm hover:shadow-md transition-shadow'"
-      @click="hasExplicitSize ? undefined : open()"
-    />
-    <span v-if="alt && !hasExplicitSize" class="block text-sm text-gray-500 dark:text-gray-400 mt-1.5 italic">{{ alt }}</span>
+  <span class="article-image" :class="[`article-image--${layoutSize}`, float && `article-image--${float}`]" :style="wrapperStyle">
+    <NuxtImg v-bind="$attrs" :src="src" :alt="alt" :title="title" :width="width" :height="height" :sizes="sizes" class="article-image__image rounded" />
+    <span v-if="caption" class="article-image__caption text-sm text-gray-500 dark:text-gray-400 italic">{{ caption }}</span>
   </span>
-
-  <Teleport v-if="!hasExplicitSize" to="body">
-    <Transition name="lightbox">
-      <div
-        v-if="lightboxOpen"
-        class="fixed inset-0 z-50 bg-black/85 flex items-center justify-center p-6"
-        @click.self="close"
-      >
-        <button
-          @click="close"
-          class="absolute top-4 right-4 text-white bg-white/20 hover:bg-white/30 rounded-full w-9 h-9 flex items-center justify-center text-lg transition-colors"
-          aria-label="Close image"
-        >
-          &times;
-        </button>
-        <img
-          :src="src"
-          :alt="alt"
-          class="max-w-full max-h-full rounded object-contain shadow-2xl"
-        />
-        <span v-if="alt" class="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/70 text-sm italic">{{ alt }}</span>
-      </div>
-    </Transition>
-  </Teleport>
 </template>
 
 <style scoped>
-.lightbox-enter-active,
-.lightbox-leave-active {
-  transition: opacity 0.2s ease;
-}
-.lightbox-enter-from,
-.lightbox-leave-to {
-  opacity: 0;
+.article-image { display: block; width: 100%; margin: 1rem auto; }
+.article-image--small { max-width: 200px; }
+.article-image--medium { max-width: 320px; }
+.article-image__image { display: block; width: 100%; max-width: 100%; height: auto; }
+.article-image__caption { display: block; margin-top: 0.375rem; text-align: center; }
+@media (min-width: 1024px) {
+  .article-image--left { float: left; margin: 0.5rem 1.5rem 1rem 0; }
+  .article-image--right { float: right; margin: 0.5rem 0 1rem 1.5rem; }
 }
 </style>

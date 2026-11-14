@@ -7,7 +7,7 @@ date: '2026-11-14'
 
 For a little over 24 hours, globally, exchange online was no longer such and there was an inability to send and recieve email.  
 
-![Email Icon](/uploads/IMG-3805.jpeg){.md:float-left} the moment there isn't really any particular root cause or reason for the outage initially happening but the main reason for it continuing seems to be additional load being added to the servers with additional failing health checks, obviously not good but this meant that they could not easily restore service.
+![Email Icon](/uploads/IMG-3805.jpeg){float="left" size="small"} the moment there isn't really any particular root cause or reason for the outage initially happening but the main reason for it continuing seems to be additional load being added to the servers with additional failing health checks, obviously not good but this meant that they could not easily restore service.
 
 The main thing this shows is that email itself is not a fantastic system to use as a core critical communication system and a lot of that is because of how email works.  When sending an email the source system looks at your domain record for a **MX** record,  that says what server to contact in order to send email to that domain, there can be multiple services in here with a different priority.  
 

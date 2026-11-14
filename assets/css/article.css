@@ -11,6 +11,7 @@
 }
 
 .article-prose {
+  display: flow-root;
   --article-border: #d1d5db;
   --article-surface: #f3f4f6;
   --article-link: #b45309;

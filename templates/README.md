@@ -15,3 +15,20 @@ Rules (enforced by `content.config.ts`):
 - Use lowercase-hyphenated slugs for file names.
 - Put images in `public/uploads/` and reference them as `/uploads/<file>`; resize large photos before uploading (originals over ~2 MB slow the build).
 - Don't add Hugo front matter (`+++`, `aliases`, `seo: … file`) or trailing spaces at the end of lines.
+
+## Article image layout
+
+Images are responsive and have no lightbox. Alt text is not shown as a caption.
+
+```md
+![Email Icon](/uploads/IMG-3805.jpeg){float="left" size="small"}
+
+![A mountain landscape](/uploads/photo.jpeg){caption="Looking towards Loch Tulla"}
+```
+
+Use `float="left"` or `float="right"` to wrap desktop text around an image.
+Floats stack and centre below 1024px. `size="small"` caps width at 200px,
+`medium` at 320px, and `full` fills the article (the default). Floats default
+to medium when size is omitted. Explicit width/height dimensions are supported;
+images always shrink to fit and retain their proportions. Captions are opt-in
+using `caption`, independently of accessible alt text. No front matter is needed.
