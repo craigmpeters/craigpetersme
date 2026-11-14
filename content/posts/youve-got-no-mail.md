@@ -7,7 +7,7 @@ draft: false
 
 For a little over 24 hours, globally, exchange online was no longer such and there was an inability to send and recieve email.  
 
-![Email Icon](/uploads/IMG-3805.jpeg){float="left" size="small"} At the moment there isn't really any particular root cause or reason for the outage initially happening but the main reason for it continuing seems to be additional load being added to the servers with additional failing health checks, obviously not good but this meant that they could not easily restore service.
+![Email Icon](/uploads/IMG-3805.jpeg){float="left" size="small"} the moment there isn't really any particular root cause or reason for the outage initially happening but the main reason for it continuing seems to be additional load being added to the servers with additional failing health checks, obviously not good but this meant that they could not easily restore service.
 
 The main thing this shows is that email itself is not a fantastic system to use as a core critical communication system and a lot of that is because of how email works.  When sending an email the source system looks at your domain record for a **MX** record,  that says what server to contact in order to send email to that domain, there can be multiple services in here with a different priority.  
 
@@ -27,8 +27,3 @@ As of me writing this there is not an enterprise capable multi-cloud SaaS Email 
 There are also email protection systems like Mimecast which can be used in the event of an outage where if it is unable to deliver the mail you can provide webmail systems to people in the event of an outage using that system.
 
 One thing through all of this is clear and that is using e-mail as an authentication mechanism (e.g. put in email and send a magic link as primary or only method of authentication) or as a single multi factor authentication system unless you have a resilient off-cloud disaster recovery option is not a sensible idea for companies anymore and certainly when purhcasing software like this to have a backup mechanism.
-
-- How does email work?
-- How do modern systems work?
-- Can you multi-cloud email?
-- Removing MFA for email paramount
