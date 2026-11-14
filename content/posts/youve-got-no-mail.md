@@ -2,6 +2,7 @@
 title: You've got (no) mail
 description: "For a little over 24 hours, globally, exchange online was no longer such and there was an inability to send and recieve email. \_"
 draft: false
+date: '2026-11-14'
 ---
 
 For a little over 24 hours, globally, exchange online was no longer such and there was an inability to send and recieve email.  
