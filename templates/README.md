@@ -27,9 +27,11 @@ Images are responsive and have no lightbox. Alt text is not shown as a caption.
 ```
 
 Use `float="left"` or `float="right"` to wrap article text around an image.
-Floats activate when the article reaches Tailwind's `sm` width (640px); otherwise
+Floats activate when the article reaches its `sm` width (576px); otherwise
 they stack and centre. This uses the article width, allowing for the sidebar,
-rather than the screen width. `size="small"` caps width at 200px,
+rather than the screen width. Configure it with `theme.extend.articleScreens.sm`
+in `tailwind.config.js`; the site-wide Tailwind `sm` stays at 640px.
+`size="small"` caps width at 200px,
 `medium` at 320px, and `full` fills the article (the default). Floats default
 to medium when size is omitted. Explicit width/height dimensions are supported;
 images always shrink to fit and retain their proportions. Captions are opt-in

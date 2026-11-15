@@ -60,8 +60,8 @@ const wrapperStyle = computed(() => props.width ? { maxWidth: `${Number(props.wi
     transform: scale(1.2);
   }
 }
-/* Use Tailwind's sm threshold for the available article width. */
-@container article (min-width: theme('screens.sm')) {
+/* Article wrapping has its own threshold; viewport breakpoints stay unchanged. */
+@container article (min-width: theme('articleScreens.sm')) {
   .article-image--left { float: left; margin: 0.5rem 1.5rem 1rem 0; }
   .article-image--right { float: right; margin: 0.5rem 0 1rem 1.5rem; }
   .article-image--left .article-image__bleed,
