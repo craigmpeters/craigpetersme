@@ -9,7 +9,12 @@ export default {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      // Article container widths are independent of viewport breakpoints.
+      articleScreens: {
+        sm: '576px',
+      },
+    },
   fontFamily: {
     'sans': ['Lexend', 'Sans-serif']
   },

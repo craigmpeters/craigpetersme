@@ -26,9 +26,18 @@ Images are responsive and have no lightbox. Alt text is not shown as a caption.
 ![A mountain landscape](/uploads/photo.jpeg){caption="Looking towards Loch Tulla"}
 ```
 
-Use `float="left"` or `float="right"` to wrap desktop text around an image.
-Floats stack and centre below 1024px. `size="small"` caps width at 200px,
+Use `float="left"` or `float="right"` to wrap article text around an image.
+Floats activate when the article reaches its `sm` width (576px); otherwise
+they stack and centre. This uses the article width, allowing for the sidebar,
+rather than the screen width. Configure it with `theme.extend.articleScreens.sm`
+in `tailwind.config.js`; the site-wide Tailwind `sm` stays at 640px.
+`size="small"` caps width at 200px,
 `medium` at 320px, and `full` fills the article (the default). Floats default
 to medium when size is omitted. Explicit width/height dimensions are supported;
 images always shrink to fit and retain their proportions. Captions are opt-in
 using `caption`, independently of accessible alt text. No front matter is needed.
+
+Below 768px, a blurred copy of each image extends behind it to both screen
+edges. The original stays sharp at its chosen size, with captions below the
+background. Images that are currently floating omit the background so it
+doesn't extend behind the adjacent text. This is automatic.
