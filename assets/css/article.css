@@ -30,6 +30,11 @@
   color: #e5e7eb;
 }
 
+@media (max-width: 767px) {
+  /* Keep centred image backgrounds aligned with both screen edges. */
+  .article-prose { max-width: none; }
+}
+
 .article-prose :where(p, ul, ol, dl, blockquote, pre, figure, .article-table) {
   margin-block: 1.25rem;
 }

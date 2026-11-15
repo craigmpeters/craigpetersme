@@ -32,3 +32,7 @@ Floats stack and centre below 1024px. `size="small"` caps width at 200px,
 to medium when size is omitted. Explicit width/height dimensions are supported;
 images always shrink to fit and retain their proportions. Captions are opt-in
 using `caption`, independently of accessible alt text. No front matter is needed.
+
+Below 768px, a blurred copy of each image extends behind it to both screen
+edges. The original stays sharp at its chosen size, with captions below the
+background. This is automatic; desktop images keep their existing layout.
