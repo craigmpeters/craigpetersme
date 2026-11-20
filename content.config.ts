@@ -1,4 +1,4 @@
-import { defineCollection, defineContentConfig, z } from '@nuxt/content'
+import { defineCollection, defineContentConfig, property, z } from '@nuxt/content'
 
 // Front matter schemas. Templates for new files live in /templates.
 export default defineContentConfig({
@@ -41,7 +41,8 @@ export default defineContentConfig({
         shareImageAlt: z.string().optional(),
         date: z.date(),
         draft: z.boolean().default(false),
-        pictures: z.string()
+        pictures: z.string(),
+        aiGenerated: property(z.boolean().default(false)).editor({ label: 'AI Generated' })
       })
     })
   }

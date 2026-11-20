@@ -146,15 +146,16 @@
 
         <!-- Recent photos carousel -->
         <div class="relative">
-          <button @click="scrollCarousel(-1)" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-black/20 hover:bg-black/40 text-gray-800 dark:text-white rounded-r px-1 py-3 transition-colors" aria-label="Previous">&lsaquo;</button>
+          <button @click="scrollCarousel(-1)" class="absolute left-0 top-20 -translate-y-1/2 z-10 bg-black/20 hover:bg-black/40 text-gray-800 dark:text-white rounded-r px-1 py-3 transition-colors" aria-label="Previous">&lsaquo;</button>
           <ul ref="carousel" class="flex snap-x gap-3 overflow-x-auto pb-2 scroll-smooth" style="scrollbar-width: none;">
             <li v-for="image of data" :key="image.path" class="flex-shrink-0 snap-start">
-              <NuxtLink :to="image.path">
-                <NuxtImg fit="cover" :src="image.pictures" width="160" height="160" class="rounded w-40 h-40 object-cover block" />
+              <NuxtLink :to="image.path" class="block w-40">
+                <NuxtImg fit="cover" :src="image.pictures" :alt="image.title" width="160" height="160" class="rounded w-40 h-40 object-cover block" />
+                <AiGeneratedCaption v-if="image.aiGenerated" class="justify-center" />
               </NuxtLink>
             </li>
           </ul>
-          <button @click="scrollCarousel(1)" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black/20 hover:bg-black/40 text-gray-800 dark:text-white rounded-l px-1 py-3 transition-colors" aria-label="Next">&rsaquo;</button>
+          <button @click="scrollCarousel(1)" class="absolute right-0 top-20 -translate-y-1/2 z-10 bg-black/20 hover:bg-black/40 text-gray-800 dark:text-white rounded-l px-1 py-3 transition-colors" aria-label="Next">&rsaquo;</button>
         </div>
 
         <!-- Social links -->

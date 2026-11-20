@@ -16,6 +16,8 @@ Rules (enforced by `content.config.ts`):
 - Put images in `public/uploads/` and reference them as `/uploads/<file>`; resize large photos before uploading (originals over ~2 MB slow the build).
 - Don't add Hugo front matter (`+++`, `aliases`, `seo: … file`) or trailing spaces at the end of lines.
 
+For photo entries, turn on **AI Generated** in Nuxt Studio's front matter editor or set `aiGenerated: true` in the Markdown front matter. This displays a robot icon and an **AI Generated Content** caption on the photo page and its thumbnails.
+
 ## Article image layout
 
 Images are responsive and have no lightbox. Alt text is not shown as a caption.
@@ -24,6 +26,8 @@ Images are responsive and have no lightbox. Alt text is not shown as a caption.
 ![Email Icon](/uploads/IMG-3805.jpeg){float="left" size="small"}
 
 ![A mountain landscape](/uploads/photo.jpeg){caption="Looking towards Loch Tulla"}
+
+![An illustration of a mountain landscape](/uploads/illustration.jpeg){:ai-generated="true"}
 ```
 
 Use `float="left"` or `float="right"` to wrap article text around an image.
@@ -36,6 +40,8 @@ in `tailwind.config.js`; the site-wide Tailwind `sm` stays at 640px.
 to medium when size is omitted. Explicit width/height dimensions are supported;
 images always shrink to fit and retain their proportions. Captions are opt-in
 using `caption`, independently of accessible alt text. No front matter is needed.
+
+Add `:ai-generated="true"` to an image's Markdown attributes to show the disclosure below it. You can combine it with an ordinary caption.
 
 Below 768px, a blurred copy of each image extends behind it to both screen
 edges. The original stays sharp at its chosen size, with captions below the
