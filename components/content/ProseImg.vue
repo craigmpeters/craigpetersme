@@ -9,6 +9,7 @@ const props = defineProps({
   float: { type: String, validator: value => ['left', 'right'].includes(value) },
   size: { type: String, validator: value => ['small', 'medium', 'full'].includes(value) },
   caption: String,
+  aiGenerated: Boolean,
 })
 const layoutSize = computed(() => props.size || (props.float ? 'medium' : 'full'))
 const sizes = computed(() => props.width
@@ -27,6 +28,7 @@ const wrapperStyle = computed(() => props.width ? { maxWidth: `${Number(props.wi
       <NuxtImg v-bind="$attrs" :src="src" :alt="alt" :title="title" :width="width" :height="height" :sizes="sizes" class="article-image__image rounded" />
     </span>
     <span v-if="caption" class="article-image__caption text-sm text-gray-500 dark:text-gray-400 italic">{{ caption }}</span>
+    <AiGeneratedCaption v-if="aiGenerated" class="justify-center" />
   </span>
 </template>
 

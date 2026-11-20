@@ -34,6 +34,7 @@
             class="w-full aspect-square object-cover rounded group-hover:opacity-90 transition-opacity"
           />
           <p class="text-sm mt-1 text-gray-500 dark:text-gray-400 truncate">{{ image.title }}</p>
+          <AiGeneratedCaption v-if="image.aiGenerated" />
         </NuxtLink>
       </div>
     </section>

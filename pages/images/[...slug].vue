@@ -1,7 +1,10 @@
 <template>
-    <div>
-       <NuxtImg :src="image.pictures"  :alt="image.description" class="w-2/3"/>
-    </div>
+    <figure class="w-2/3">
+        <NuxtImg :src="image.pictures" :alt="image.description" class="w-full" />
+        <figcaption v-if="image.aiGenerated">
+            <AiGeneratedCaption />
+        </figcaption>
+    </figure>
 </template>
 
 <script setup>
